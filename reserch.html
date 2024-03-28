@@ -1,0 +1,624 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Page 1</title>
+
+  <!-- Custon CSS -->
+  <link rel="stylesheet" href="./CSS/header.css">
+  <link rel="stylesheet" href="./CSS/footer.css">
+  <link rel="stylesheet" href="./CSS/home-page.css">
+
+
+</head>
+
+<body>
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    }
+
+    img {
+      width: 100%;
+      height: 100%;
+    }
+
+    .hero-banner img {
+      position: relative;
+      margin-top: -10vh;
+    }
+
+    .hero-content h1 {
+      position: absolute;
+      top: 38%;
+      left: 23%;
+      right: 18%;
+      font-size: 54px;
+      color: #fff;
+    }
+
+    .hero-content p {
+      position: absolute;
+      top: 53%;
+      left: 10%;
+      right: 10%;
+      font-size: 27px;
+      text-align: center;
+      color: #fff;
+      font-weight: bold;
+    }
+
+    .hero-content button {
+      font-weight: bold;
+      cursor: pointer;
+      position: absolute;
+      bottom: 20%;
+      left: 40%;
+      font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+      padding: 12px 50px;
+      border-radius: 7px;
+      background: rgba(0, 0, 0, 0);
+      font-size: 30px;
+      border: 3px solid #6f0000;
+      color: #6f0000;
+    }
+
+    .hero-content button:hover {
+
+      background: #6f0000;
+      border-color: none;
+      color: #fff;
+    }
+
+    .Blog-comparison {
+      width: 80%;
+      margin: auto;
+      text-align: center;
+    }
+
+    .Blog-comparison h1 {
+      font-size: 37px;
+      margin-top: 50px;
+      margin-bottom: 30px;
+      text-decoration: underline;
+    }
+
+    .Blog-comparison p {
+      font-size: 18px;
+      margin-bottom: 85px;
+      text-align: justify;
+    }
+
+    td img {
+      width: 98%;
+      height: auto;
+      margin: 70px 0;
+    }
+
+    tr th {
+      font-size: 25px;
+      padding: 25px;
+    }
+
+    table {
+      margin-bottom: 50px;
+      background: #595959;
+    }
+
+    td {
+      color: #fff;
+      border-style: dotted;
+      font-size: 20px;
+      padding: 20px;
+    }
+
+    th {
+      color: #fff;
+      border-style: dotted;
+      border-color: #fff;
+
+
+    }
+  </style>
+  <!-- Header of the page -->
+  <header id="header" class="header">
+
+    <!-- navigation for the website -->
+    <div class="navigation">
+      <div class="container">
+        <nav class="nav__center">
+          <div class="nav__header">
+            <div class="nav__logo">
+              <a href="./index.html">
+                <h1>Digital<span>Eye.</span></h1>
+              </a>
+            </div>
+          </div>
+
+          <div class="nav__menu">
+            <ul class="nav__list">
+              <li class="nav__item">
+                <a href="./index.html" class="nav__link">Home</a>
+              </li>
+
+              <li class="nav__item">
+                <a href="./product.html" class="nav__link">Camera</a>
+              </li>
+
+              <li class="nav__item">
+                <a href="./reserch.html" class="nav__link">Reserch</a>
+              </li>
+
+              <li class="nav__item">
+                <a href="./contact-us.html" class="nav__link">Product</a>
+              </li>
+
+              <li class="nav__item">
+                <a href="./blog.html" class="nav__link">Blog</a>
+              </li>
+
+              <li class="nav__item">
+                <a href="./about-us.html" class="nav__link">About Us</a>
+              </li>
+            </ul>
+
+            <ul class="nav__icons">
+              <a href="#" class="icon__item">
+                <svg>
+                  <use xlink:href="./Assets/sprite.svg#icon-search"></use>
+                </svg>
+              </a>
+
+              <a href="#" class="icon__item">
+                <svg>
+                  <use xlink:href="./Assets/sprite.svg#icon-user"></use>
+                </svg>
+              </a>
+
+              <a href="#" class="icon__item">
+                <svg>
+                  <use xlink:href="./Assets/sprite.svg#icon-shopping-basket"></use>
+                </svg>
+                <span>2</span>
+              </a>
+            </ul>
+          </div>
+        </nav>
+      </div>
+    </div>
+
+    <!-- <div class="hero">
+      <!-- <div id="hero-slider"><img id="hero-slider" src="./Assets/Home-page/Home-BlogImage.jpg" alt=""></div> -->
+
+    <!-- <div class="hero__content container">
+        <h1>
+          <span>Meet Our <span class="color">Exceptional Team:</span>
+            <span>Unleashing Brilliance,<span class="color"> Together</span></span>
+        </h1>
+        <a href="#" class="btn btn-hero">Shop Now</a>
+      </div> -->
+  </header>
+
+  <main>
+    <section class="hero-banner">
+      <img src="./Assets/Reserch-Page/Research-HeroImage.jpg" alt="Hero Image">
+      <div class="hero-content">
+        <h1>Unlocking the Power of Innovation</h1>
+        <p>Discover the Cutting-Edge Components and Revolutionary Technologies that Propel CameraShop to the Forefront
+          of Camera Equipment</p>
+        <button id="scrollButton">View Our Research</button>
+      </div>
+    </section>
+
+    <section class="home-comparison">
+
+    </section>
+    <section class="Blog-comparison" id="section2">
+
+      <h1>Research Findings and Website Comparisons</h1>
+      <p>As part of our research, we analyzed several industry-leading websites in the camera equipment space. We have
+        identified key components and features that set these websites apart. Below, we highlight five web pages as
+        references and showcase the corresponding changes we have implemented on our website.</p>
+      <hr>
+      <hr>
+
+      <!--This is Reference 1 -->
+      <h1>Reference 1: Mozilla (Home Page)</h1>
+      <p style="text-align: center">Visit Reference website by <a href="https://www.mozilla.org/en-US/"
+          target="_blank">Clicking Here!</a></p>
+      <h1>Reference Website</h1>
+      <p>
+        Mozilla.org is the official website of the Mozilla Foundation, a non-profit organization that advocates for an
+        open and accessible internet. The reasons to choose this website as a reference for home page is its way of
+        showcasing home page. Its overall design way of puting images and text aside and mostly telling less but
+        providing more and effective information for given images. Its makes user more interested and visit there other
+        pages. Its easy to navigate and user has full experience from it.
+      </p>
+      <h1>
+        Changes on Our Website
+      </h1>
+      <p>Drawing inspiration from Mozilla Home page showcasing system, we have integrated a similar feature into our own
+        website. Our enhanced home page showcasing system offers a more refined user experience, empowering visitors to
+        quickly navigate and find relevant content based on their preferences.
+        <br><br>
+        To enhance user engagement, we have implemented a captivating hero banner that sets the stage for the content
+        users can expect. Additionally, we have added a featured products from our product page with a image silder so
+        that the users can quickly focus on what product has a better sell and discounts.
+        <br><br>
+        Furthermore, recognizing the importance of other page we have added a short description for each page and add a
+        button so that user can quickly navigate to those area. We also have added a contact Us setion so that user can
+        contat us for necessary query.
+        <br><br>
+        Through these enhancements, we have significantly improved the browsing experience for our users, ensuring they
+        can effortlessly discover and explore the perfect camera-related titles that align with their interests. Our
+        goal is to create a user-friendly environment that not only provides informative content but also encourages
+        active participation and a sense of connection with our audience.</p>
+      <table width="100%">
+        <tr align="center">
+          <th>Reference Page</th>
+          <th>Our Home Page</th>
+        </tr>
+        <tr align="center">
+          <td>
+            <img src="./Assets/Reserch-Page/HomeImage1.jpg" alt="Home Image">
+
+          </td>
+          <td>
+            <img src="./Assets/Reserch-Page/Research-OurHomeImage1.jpg" alt="Home Image">
+          </td>
+        </tr>
+        <tr>
+          <td colspan="2">Although the Hero banner does not look too similar but we have take inspiration from those
+            pages make changes through it. </td>
+        </tr>
+        <tr align="center">
+          <td style="border-bottom: #fff;">
+            <img src="./Assets/Reserch-Page/HomeImage2.jpg" alt="Home Image">
+
+          </td>
+          <td style="border-bottom: #fff;">
+            <img src="./Assets/Reserch-Page/Research-OurHomeImage2.jpg" alt="Home Image">
+          </td>
+        </tr>
+
+        <tr align="center">
+          <td style="border-top: #fff;">
+            <img src="./Assets/Reserch-Page/HomeImage3.jpg" alt="Home Image">
+
+          </td>
+          <td style="border-top: #fff;">
+            <img src="./Assets/Reserch-Page/Research-OurHomeImage3.jpg" alt="Home Image">
+          </td>
+        </tr>
+        <tr>
+          <td colspan="2">Likewise, we like the way of showcasing their page in a way user feel more attracted to visit
+            other part of page and they also wrote only the necessary part to be shown.</td>
+        </tr>
+      </table>
+      <br><br>
+      <hr>
+      <hr>
+
+      <!--This is Reference 2 -->
+      <h1>Reference 2: BroadwayInfoSys (Blog Page)</h1>
+      <p style="text-align: center">Visit Reference website by <a href="https://broadwayinfosys.com/blog/"
+          target="_blank">Clicking Here!</a></p>
+      <h1>Reference Website</h1>
+      <p>Broadway Infosys Nepal is a renowned IT training institute located in Nepal, offering a comprehensive range of
+        technical courses and training programs.
+        <br><br>
+        One standout feature that captured our attention is their innovative approach to presenting the Blog page.
+        Utilizing visually appealing cards, each accompanied by captivating images, proper headings, and engaging text
+        styles, Broadway Infosys ensures an immersive browsing experience. Users can effortlessly explore a wide array
+        of topics and effortlessly access any blog page of their interest simply by clicking on the corresponding image
+        or title within the card.
+        <br><br>
+        This unique feature not only enhances the overall aesthetics of the website but also facilitates seamless
+        navigation and encourages users to delve deeper into the blog content. Broadway Infosys' user-friendly design
+        and intuitive browsing capabilities contribute to an enriched learning environment for individuals seeking
+        valuable insights and knowledge in the field of IT.
+        <br><br>
+        Overall, Broadway Infosys Nepal stands out as a leading IT training institute, offering an extensive selection
+        of technical courses and demonstrating a commitment to providing an engaging and interactive user experience
+        through their exceptional blog page design.</p>
+      <h1>
+        Changes on Our Website
+      </h1>
+      <p>Drawing inspiration from Broadway Infosys's impressive blog showcasing system, we have integrated a similar
+        feature into our own website. Our enhanced blog page showcasing system offers a more refined user experience,
+        empowering visitors to quickly navigate and find relevant content based on their preferences.
+        <br><br>
+        To enhance user engagement, we have implemented a captivating hero banner that sets the stage for the content
+        users can expect. Additionally, we have carefully curated a selection of essential cards, each presenting
+        concise yet comprehensive information about the provided topics. These cards allow users to easily skim through
+        the available options and select the blog titles that interest them the most.
+        <br><br>
+        Furthermore, recognizing the importance of fostering interaction, we have incorporated a reply section where
+        users can engage with us, providing valuable feedback or seeking additional information. This feature encourages
+        a sense of community and establishes a platform for users to connect and engage with us in the near future.
+        <br><br>
+        Through these enhancements, we have significantly improved the browsing experience for our users, ensuring they
+        can effortlessly discover and explore the perfect camera-related blog titles that align with their interests.
+        Our goal is to create a user-friendly environment that not only provides informative content but also encourages
+        active participation and a sense of connection with our audience.</p>
+      <table width="100%">
+        <tr align="center">
+          <th>Reference Page</th>
+          <th>Our Blog Page</th>
+        </tr>
+        <tr align="center">
+          <td>
+            <img src="./Assets/Reserch-Page/BlogImage1.jpg" alt="Blog Image">
+
+          </td>
+          <td>
+            <img src="./Assets/Reserch-Page/OurBlogImage1.jpg" alt="Blog Image">
+          </td>
+        </tr>
+        <tr>
+          <td colspan="2">As you can see we have applied same card design but we have enhanced it more by making the
+            font size bigger and more easier for our user to navigate through with proper knowledge of what they are
+            into.</td>
+        </tr>
+        <tr align="center">
+          <td>
+            <img src="./Assets/Reserch-Page/BlogImage2.jpg" alt="Blog Image">
+
+          </td>
+          <td>
+            <img src="./Assets/Reserch-Page/OurBlogImage2.jpg" alt="Blog Image">
+          </td>
+        </tr>
+        <tr>
+          <td colspan="2"> Likewise, we liked the idea of auto re-direct to reply section when clicked on reply button
+            so, we have added a responsive Reply button with some changes to automatically re-direct to reply form for
+            necessary query. </td>
+        </tr>
+
+        <tr align="center">
+          <td>
+            <img src="./Assets/Reserch-Page/BlogImage4.jpg" alt="Blog Image">
+
+          </td>
+          <td>
+            <img src="./Assets/Reserch-Page/OurBlogImage4.jpg" alt="Blog Image">
+          </td>
+        </tr>
+        <tr>
+          <td colspan="2">Finally, This is the re-directed page when we click on reply button.</td>
+        </tr>
+      </table>
+      <br><br>
+      <hr>
+      <hr>
+
+      <!--This is Reference 3 -->
+      <h1>Reference 3: Interact Nepal (About Us Page)</h1>
+      <p style="text-align: center">Visit Reference website by <a href="https://interactnepal.org/team/"
+          target="_blank">Clicking Here!</a></p>
+      <h1>Reference Website</h1>
+      <p>Interact District 3292 Nepal and Bhutan is the facilitating body of all the Interact clubs in Nepal and
+        BhutanInteract District 3292 Nepal and Bhutan is the facilitating body of all the Interact clubs in Nepal and
+        Bhutan.
+        <br><br>
+        One standout feature that captured our attention is the hover effect and its way of showcasing team images with
+        its detail in a card.
+      </p>
+      <h1>
+        Changes on Our Website
+      </h1>
+      <p>Drawing inspiration from Interact Nepal portfolio showcasing system, we have integrated a similar feature into
+        our own website. We have enhanced our website by making user able to view more on clicking the image.
+        <br><br>
+        To enhance user engagement, we have implemented a captivating card which showcases a detail portfolio of ourteam
+        members.
+        <br><br>
+        Furthermore, we have also implemented a feedback form so that user can provide us proper feedback and make us
+        konw waht can we do to make things better.
+        <br><br>
+        Through these enhancements, we have significantly improved the browsing experience for our users, ensuring they
+        can effortlessly discover and explore the perfect camera-related blog titles that align with their interests.
+        Our goal is to create a user-friendly environment that not only provides informative content but also encourages
+        active participation and a sense of connection with our audience.</p>
+      <table width="100%">
+        <tr align="center">
+          <th>Reference Page</th>
+          <th>Our About Us Page</th>
+        </tr>
+        <tr align="center">
+          <td>
+            <img src="./Assets/Reserch-Page/Research-AboutUsImage.jpg" alt="AboutUs Image">
+
+          </td>
+          <td>
+            <img src="./Assets/Reserch-Page/Researh-OurAboutUsImage.jpg" alt="AboutUs Image">
+          </td>
+        </tr>
+        <tr>
+          <td colspan="2"> We implemented a similar hover effect but difference in my term like user is able to learn
+            more About Us by clicking the image or simply by clicking the button "View More". </td>
+        </tr>
+      </table>
+      <br><br>
+      <hr>
+      <hr>
+
+      <!--This is Reference 4 -->
+      <h1>Reference 4: Cloudfactory (Contact Us Page)</h1>
+      <p style="text-align: center">Visit Reference website by <a href="https://www.cloudfactory.com/contact"
+          target="_blank">Clicking Here!</a></p>
+      <h1>Reference Website</h1>
+      <p>Cloudfactory is a company that specializes in providing data labeling and annotation services for machine
+        learning and artificial intelligence (AI) applications.
+        <br><br>
+        One standout feature that captured our attention is the way of showasing the contact us form. It's easier to
+        follow and user can easily interact with the team members.
+      </p>
+      <h1>
+        Changes on Our Website
+      </h1>
+      <p>Drawing inspiration from Cloudfactory COntact Us showcasing system, we have integrated a similar feature into
+        our own website. We have enhanced our website by making user able to contact Us through other social media
+        sources and a map to figure out our location more easily.
+        <br><br>
+        To enhance user engagement, we have implemented a proper e.g. as a placeholder so that user can know what to
+        write in the given fields.
+        <br><br>
+
+        Through these enhancements, we have significantly improved the browsing experience for our users, ensuring they
+        can effortlessly discover and explore the perfect camera-related blog titles that align with their interests.
+        Our goal is to create a user-friendly environment that not only provides informative content but also encourages
+        active participation and a sense of connection with our audience.</p>
+      <table width="100%">
+        <tr align="center">
+          <th>Reference Page</th>
+          <th>Our About Us Page</th>
+        </tr>
+        <tr align="center">
+          <td>
+            <img src="./Assets/Reserch-Page/Research-ContactUsImage.jpg" alt="Research Image">
+
+          </td>
+          <td>
+            <img src="./Assets/Reserch-Page/Research-OurResearchImage.jpg" alt="Research Image">
+          </td>
+        </tr>
+        <tr>
+          <td colspan="2"> We have implemented a similar form but added a little more context to the overall page to
+            make user more accessable to with us further enhance our relation.</td>
+        </tr>
+      </table>
+      <br><br>
+      <hr>
+      <hr>
+
+      <!--This is Reference 5 -->
+      <h1>Reference 5: TheCameraStore (Product Page)</h1>
+      <p style="text-align: center">Visit Reference website by <a
+          href="https://thecamerastore.com/collections/slr-cameras" target="_blank">Clicking Here!</a></p>
+      <h1>Reference Website</h1>
+      <p>A camera shop is a specialized retail store that caters to photography enthusiasts and professionals. It offers
+        a wide range of cameras, lenses, accessories, and related equipment to meet the needs of photographers of all
+        levels.
+        <br><br>
+        One standout feature that captured our attention is the way of showasing its navigation as well as it UI/UX. We
+        also like how it displays its card, it makes user more easy to accessable.
+      </p>
+      <h1>
+        Changes on Our Website
+      </h1>
+      <p>Drawing inspiration from TheCameraStore showcasing system, we have integrated a similar feature into our own
+        website. We have enhanced our website by making user able to navigate through the products that they like.
+        <br><br>
+        To enhance user engagement, we have implemented a visually appealing cards so that user can find what they are
+        expecting.
+        <br><br>
+
+        Through these enhancements, we have significantly improved the browsing experience for our users, ensuring they
+        can effortlessly discover and explore the perfect camera-related blog titles that align with their interests.
+        Our goal is to create a user-friendly environment that not only provides informative content but also encourages
+        active participation and a sense of connection with our audience.</p>
+      <table width="100%">
+        <tr align="center">
+          <th>Reference Page</th>
+          <th>Our Product Page</th>
+        </tr>
+        <tr align="center">
+          <td>
+            <img src="./Assets/Reserch-Page/Research-ProductImage.jpg" alt="Research Image">
+
+          </td>
+          <td>
+            <img src="./Assets/Reserch-Page/Research-OurProductPage.jpg" alt="Product Image">
+          </td>
+        </tr>
+        <tr>
+          <td colspan="2"> We have implemented a similar form but added a little more context to the overall page to
+            make user more accessable to our product and other pages.</td>
+        </tr>
+      </table>
+      <br><br>
+      <hr>
+      <hr>
+
+    </section>
+
+    <script>
+      document.getElementById("scrollButton").addEventListener("click", function () {
+        document.getElementById("section2").scrollIntoView({
+          behavior: 'smooth'
+        });
+      });
+    </script>
+  </main>
+
+  <!-- Footer of the Page -->
+  <footer id="footer" class="section footer">
+    <div class="container">
+      <div class="footer__top">
+        <div class="footer-top__box">
+          <h3>Shop Here</h3>
+          <a href="./product.html">Cameras</a>
+          <a href="./product.html">Lenses</a>
+          <a href="./product.html">Accessories</a>
+          <a href="./product.html">Offers</a>
+        </div>
+        <div class="footer-top__box">
+          <h3>INFORMATION</h3>
+          <a href="./about-us.html">About Us</a>
+          <a href="#">Privacy Policy</a>
+          <a href="#">Terms & Conditions</a>
+          <a href="./contact-us.html">Get in Touch</a>
+        </div>
+        <div class="footer-top__box">
+          <h3>CONTACT US</h3>
+          <div>
+            <span>
+              <svg>
+                <use xlink:href="./Assets/sprite.svg#icon-location"></use>
+              </svg>
+            </span>
+            Kathmandu, Nepal
+          </div>
+          <div>
+            <span>
+              <svg>
+                <use xlink:href="./Assets/sprite.svg#icon-envelop"></use>
+              </svg>
+            </span>
+            <a href="mailto:info@de.birendrao1@gmail.com.com"">info@digitaleye.com</a>
+          </div>
+          <div>
+            <span>
+              <svg>
+                <use xlink:href=" ./Assets/sprite.svg#icon-phone"> </use> </svg> </span> <a
+              href="tel:+77 9810042188">+977 986960081</a>
+          </div>
+          <div>
+            <span>
+              <svg>
+                <use xlink:href="./Assets/sprite.svg#icon-paperplane"></use>
+              </svg>
+            </span>
+            San Fransisco, Califonia
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+
+  <script src="./JS/header.js"></script>
+</body>
+
+</html>

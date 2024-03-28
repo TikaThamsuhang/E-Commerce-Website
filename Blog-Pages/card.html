@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta name="author" content="Tika Thamsuhang">
+	<meta name="description" content="E-commerce website">
+	<meta name="keywords" content="HTML">
+    <title>How Technology Affects Daily Life and Business</title>
+    <link rel="stylesheet" href="BlogCss/style.css">
+    <style>
+      .container {
+          width: 1230px; /* Set the width of the container */
+          height: auto; /* Automatically adjust the height */
+          margin: auto; /* Center the container horizontally */
+          margin-top: 80px; /* Set top margin to 80px */
+          display: flex; /* Use flexbox layout */
+      }
+  
+      .icons {
+          margin: 80px 40px; /* Set margin around the icons */
+          position: absolute; /* Position the icons absolutely */
+      }
+  
+      .icons ul {
+          list-style: none; /* Remove the default bullet points */
+          text-align: center; /* Center-align the list items */
+          padding: 8px 0; /* Set padding for the list */
+      }
+  
+      .icons ul li {
+          padding: 6px 0; /* Set padding for the list items */
+      }
+  
+      .content {
+          padding: 0px 105px; /* Set padding around the content */
+          margin: 0 112px; /* Set margin around the content */
+      }
+  
+      .content h1 {
+          font-size: 39px; /* Set font size for the heading */
+          margin-bottom: 15px; /* Set bottom margin for the heading */
+      }
+  
+      .content img {
+          width: 777px; /* Set the width of the image */
+      }
+  
+      ul li i {
+          width: 16px; /* Set width for the icon */
+          border: 1px solid; /* Add a 1px solid border */
+          border-radius: 100%; /* Make the border radius 100% to create a circle */
+          padding: 6px 9px; /* Set padding for the icon */
+          font-size: 15px; /* Set font size for the icon */
+          cursor: pointer; /* Set the cursor type to pointer */
+      }
+  
+      .icons ul li a img {
+          width: 32px; /* Set the width of the image */
+          border: 1px solid; /* Add a 1px solid border */
+          border-radius: 26%; /* Set the border radius to 26% */
+          padding: 5px; /* Set padding for the image */
+      }
+  
+      .icons ul li a img:hover {
+          background-color: #a9a9a9; /* Set background color on hover */
+          border: 1px solid #a9a9a9; /* Change the border color on hover */
+      }
+  
+      .icons button {
+          border: white; /* Set border color to white */
+          background: white; /* Set background color to white */
+          cursor: pointer; /* Set the cursor type to pointer */
+          margin-top: 18px; /* Set top margin */
+      }
+  
+      .icons button img {
+          width: 45px; /* Set the width of the image */
+          background: white; /* Set background color to white */
+          padding: 4px; /* Set padding for the image */
+      }
+  
+      .icons button img:hover {
+          width: 45px; /* Set the width of the image on hover */
+          background: white; /* Set background color on hover */
+          padding: 0px; /* Reset the padding on hover */
+      }
+  
+      .nav a {
+          border: 1px; /* Add a 1px border */
+          text-decoration: none; /* Remove underline decoration */
+          background: rgba(0,0,0,.05); /* Set background color */
+          color: rgba(0,0,0,.6); /* Set text color */
+          border-radius: 3px; /* Add a border radius */
+          padding: 8px 12px; /* Set padding for the link */
+          display: inline-block; /* Display as inline-block */
+          margin-right: 4px; /* Set right margin */
+      }
+  
+      .para {
+          margin-top: 25px; /* Set top margin */
+          display: flex; /* Use flexbox layout */
+      }
+  
+      .para p::before {
+          content: "\00AB"; /* Insert the "«" symbol before the paragraph */
+      }
+  
+      .para-text {
+          border-top: 1px solid #a9a9a9; /* Add top border */
+          width: 50%; /* Set the width of the text container */
+          height: auto; /* Automatically adjust the height */
+          padding: 15px 0px; /* Set padding for the text container */
+          border-bottom: 1px solid #a9a9a9; /* Add bottom border */
+          font-size: 20px; /* Set font size for the text */
+      }
+  
+      .para-box {
+          border-top: 1px solid #a9a9a9; /* Add top border */
+          width: 50%; /* Set the width of the box container */
+          height: auto; /* Automatically adjust the height */
+          padding: 15px 0px; /* Set padding for the box container */
+          border-left: 1px solid #a9a9a9; /* Add left border */
+          border-bottom: 1px solid #a9a9a9; /* Add bottom border */
+      }
+  
+      .comments {
+          width: 800px; /* Set the width of the comments container */
+          margin: auto; /* Center the comments container horizontally */
+          height: 700px; /* Set the height of the comments container */
+      }
+  
+      .row {
+          display: flex; /* Use flexbox layout */
+          justify-content: space-between; /* Distribute space between elements */
+          margin: 18px 0; /* Set top and bottom margin */
+      }
+  
+      .row label input {
+          width: 243px; /* Set the width of the input field */
+          height: 38px; /* Set the height of the input field */
+          padding: 8px; /* Set padding for the input field */
+          border-radius: 2px; /* Add a border radius */
+          background: #f0f8ff; /* Set background color */
+          border: #f0f8ff; /* Set border color */
+          font-family: 'Josefin Sans', sans-serif; /* Set the font family */
+      }
+  
+      textarea {
+          padding: 15px 12px; /* Set padding for the textarea */
+          border: #f0f8ff; /* Set border color */
+          border-radius: 3px; /* Add a border radius */
+          background: #f0f8ff; /* Set background color */
+      }
+  
+      .comments button {
+          margin: 6px 0; /* Set margin */
+          padding: 10px; /* Set padding */
+          background-color: #1C9963; /* Set background color */
+          border-color: #1C9963; /* Set border color */
+          color: #f0f8ff; /* Set text color */
+          font-size: 16px; /* Set font size */
+          border-radius: 4px; /* Add a border radius */
+          font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif; /* Set the font family */
+          cursor: pointer; /* Set the cursor type to pointer */
+      }
+  
+      .comments button:hover {
+          background-color: #33cc33; /* Change background color on hover */
+          border-color: #33cc33; /* Change border color on hover */
+      }
+  </style>
+  
+</head>
+<body>
+    <header></header>
+
+    <section class="container">
+        <div class="icons">
+            <p>Share</p>
+               <ul>
+                <li><a href="https://www.facebook.com/sharer/sharer.php?u=http://127.0.0.1:5500/card1.html" target="_blank">
+                  <img src="BlogImages/facebook.png" alt="facebook"></a>
+                </li>
+                <li><a href="https://api.whatsapp.com/send?text=How Technology Affects Daily Life and Business:http://127.0.0.1:5500/card1.html" target="_blank">
+                  <img src="BlogImages/whatsapp.png" alt="whatsapp"></a>
+                </li>
+                <li><a href="https://twitter.com/intent/tweet?url=http://127.0.0.1:5500/card.html&text=How Technology Affects Daily Life and Business" target="_blank">
+                  <img src="BlogImages/twitter.png" alt="twitter"></a>
+                </li>
+                <li><a href="https://www.linkedin.com/sharing/share-offsite/?url=http://127.0.0.1:5500/card1.html" target="_blank"> 
+                  <img src="BlogImages/linkedin.png" alt="linkedin"></a>
+                </li>
+               </ul>
+               <hr style="margin: 18px 0;">
+               <p>Reply</p>
+               <button><img src="BlogImages/reply.png" alt="reply image" id="scrollButton">
+               </button>
+
+        </div>
+        <div class="content">
+            <h1>How Technology Affects Daily Life and Business</h1>
+            <p style="margin-bottom: 30px;">May 4, 2023</p>
+            <img src="BlogImages/HeroBannerImage.png" alt="card image" style="width: 800px;">
+            <p style="padding-top: 30px; line-height: 1.5; font-size: 19px; text-align: justify; margin-bottom: 30px;">
+                Technology has become an integral part of our daily lives and has had a significant impact on the way we live and do business. From the way we communicate to the way we work, technology has transformed every aspect of our lives.
+                <br><br>
+                In our personal lives, technology has made it easier to stay connected with others, regardless of physical distance. Social media platforms and messaging apps allow us to communicate with friends and family anytime and anywhere. The rise of online shopping has also made it possible to purchase goods from anywhere in the world, making our lives more convenient and accessible.
+                <br><br>
+                In the business world, technology has revolutionized the way we work. Cloud computing and remote collaboration tools have made it possible for teams to work together seamlessly from anywhere in the world, enabling companies to tap into global talent pools and reduce overhead costs. Automation and artificial intelligence have also transformed the way we do business, increasing efficiency and enabling businesses to scale at an unprecedented rate.
+                <br><br>
+                However, there are also negative effects of technology on our daily lives and business. For example, the constant connectivity can lead to an addiction to technology and a blurring of the boundaries between work and personal life. Additionally, the rise of automation and artificial intelligence has raised concerns about the displacement of jobs and the potential impact on income inequality.
+                <br><br>
+                In conclusion, technology has had a profound impact on our daily lives and businesses. While it has brought many benefits and opportunities, it also presents challenges and negative effects that need to be addressed. It is important to find a balance between embracing the benefits of technology while also mitigating its negative effects to ensure a sustainable and equitable future for all.
+                </p>
+                <div class="nav">
+                    <a href="">Home</a>
+                    <a href="">About Us</a>
+                    <a href="">Our Products</a>
+                </div>
+                <div class="para">
+                    <div class="para-text">
+                    <a href="card1.html"><p><strong>The Impact of Technology on Daily Life and Business: A Demonstration</strong></p></a>
+                </div>
+                <div class="para-box">
+
+                </div>
+                </div>
+        </div>
+          
+    </section>
+   <section class="post-cards">
+        <div class="flex-card1">
+            <div class="card" id="card2">
+                <a href="card2.html"><img src="BlogImages/card2.jpg" alt="card2 image">
+                <div class="card-detail">
+                  <h2>Exploring the Role of Technology in Shaping the Modern World</h2></a>
+                  <p>As we continue to push the boundaries of what technology can achieve, it's essential to explore the role that technology plays in shaping the modern world, from transforming the way we work, communicate, and learn, to enabling us to address some of the most pressing global challenges we face.</p>
+                  <hr style="margin-top: 30px;">
+                  <p style="padding-top: 13px;">May 5, 2023</p>
+                </div>       
+              </div>
+
+              <div class="card" id="card3">
+                <a href="card3.html"><img src="BlogImages/card3.jpg" alt="card3 image">
+                <div class="card-detail">                
+                  <h2>The Advancements in Technology and Their Effect on Business and Society</h2></a>
+                  <p>The advancements in technology are rapidly changing the way that businesses operate and the way that we interact with each other, with far-reaching effects on society as a whole, from creating new industries and employment opportunities to changing the way that we communicate, access information, and solve complex problems.</p>
+                  <hr style="margin-top: 13px;">
+                  <p style="padding-top: 13px;">May 6, 2023</p>
+                </div>              
+              </div>
+
+              <div class="card" id="card4">
+                <a href="card4.html"><img src="BlogImages/card4.jpg" alt="card4 image">
+                <div class="card-detail">
+                  <h2>The Digital Era: How Technology is Transforming the Way We Live and Work</h2></a>
+                  <p>The digital era is fundamentally transforming the way we live and work, with technology enabling us to connect, collaborate, and create in new and innovative ways, while also presenting us with unprecedented challenges and opportunities.</p>
+                  <hr style="margin-top: 46px;">
+                  <p style="padding-top: 13px;">May 7, 2023</p>
+                  </div>               
+              </div>
+        </div>
+    </section>
+
+    <section class="comments" id="section3">
+           <form onsubmit="validateForm()" name="messageForm">
+            <label>Leave a Reply<br><br><textarea name="Message" rows="13" cols="104" placeholder="Write your response..." style="padding: 15px 12px;"></textarea></label>
+            <br>
+            <div class="row">
+            <label><input type="text" placeholder="Name" name="Name" size="20"></label>
+            <label><input type="email" placeholder="E-mail address" name="Email"></label>
+            <label><input type="text" placeholder="Website link"></label>
+          </div>
+          <button>Post Comment</button>
+           </form>
+    </section>
+    <script>
+      document.getElementById("scrollButton").addEventListener("click", function() {
+      document.getElementById("section3").scrollIntoView({ behavior: 'smooth' });
+      });
+      </script>
+      <script>
+        function validateForm(){
+          var Name=document.forms["messageForm"]["Name"].value;
+          var Email=document.forms["messageForm"]["Email"].value;
+          var Message=document.forms["messageForm"]["Message"].value;
+    
+          if(Name=="" || Email=="" || Message==""){
+            alert("Empty fields found. Please fill the form.");
+          }else{
+            alert("Thank you for the feedback.");
+          }
+          
+        }
+      </script>  
+</body>
+</html>
+    

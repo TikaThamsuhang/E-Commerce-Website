@@ -1,0 +1,68 @@
+@import url(./global.css);
+
+  /* Footer Styling */
+.footer {
+    background-color: var(--dark-color);
+    margin: opx;
+    padding: 20px ;
+    color: var(--grey-color);
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: wrap;
+  }
+
+  
+  
+  .footer__top {
+    width: 100vh;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+  
+  .footer-top__box {
+    width: calc(33.33% - 0p2x);
+    margin-bottom: 20px;
+  }
+  
+  .footer-top__box h3 {
+    font-size: 18px;
+    font-weight: 400;
+    margin-bottom: 10px;
+  }
+  
+  .footer-top__box a {
+    display: block;
+    color: var(--grey);
+    font-size: 14px;
+    margin-bottom: 8px;
+    text-decoration: none;
+    transition: color 0.6s;
+  }
+  
+  .footer-top__box a:hover {
+    color: var(--default-color);
+  }
+  
+  .footer-top__box div {
+    display: flex;
+    align-items: center;
+    margin-bottom: 8px;
+    font-size: 14px;
+    line-height: 1.4;
+  }
+  
+  .footer-top__box div svg {
+    width: 16px;
+    height: 16px;
+    margin-right: 8px;
+    fill: var(--default-color);
+  }
+  
+  .footer__top{
+    justify-content: center;
+    display: flex;
+    justify-content: space-between;
+    width: 155vh;
+  }

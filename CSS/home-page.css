@@ -1,0 +1,294 @@
+@import url(./global.css);
+
+
+.hero {
+  background-image: url(../Assets/Home-page/Banner-2.png);
+  margin-top: -10vh;
+  height: 60vh;
+  position: relative;
+  text-align: center;
+  display: block;
+  overflow-y: auto;
+  overflow-x: hidden !important;
+  background-size: cover;
+  background-position: center;
+}
+
+
+.hero__content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 100%;
+  transform: translate(-50%, -50%);
+  color: var(--grey-color);
+}
+
+.navigation.fix__nav .hero .hero__content {
+  top: 70%;
+}
+
+.hero__content h1 {
+  font-size: 45px;
+  margin-bottom: 20px;
+}
+
+.hero__content h1 span {
+  display: block;
+  line-height: 1.2;
+}
+
+.hero__content h1 span.color {
+  display: inline-block;
+  color: var(--yellow);
+}
+
+.btn-hero:link,
+.btn-hero:visited {
+  display: inline-block;
+  color: var(--grey-color);
+  padding: 10px 20px;
+  border: 2px solid var(--default-color);
+  border-radius: 50px;
+  font-size: 20px;
+  font-weight: 600;
+  text-transform: uppercase;
+  transition: all 300ms ease-in-out;
+}
+
+.btn-hero:hover {
+  background-color: var(--default-color);
+}
+
+/* Section */
+
+section, .homepage-content{
+  background-color: var(--grey-color);
+}
+
+.title{
+  font-size: 40px;
+  padding: 20px 40px;
+}
+/* SLider  */
+
+  .product-detail {
+  text-align: center; /* Aligns the text content of the element to the center */
+  line-height: 1;  
+}
+
+  .product-detail p {
+  font-size: 30px; /* Sets the font size of the paragraph to 35 pixels */
+  }
+
+  #product-img-slider img {
+  width: 80%; /* Sets the width of the image to 90% of its parent element */
+  height: auto; /* Sets the height of the image to auto */
+  box-shadow: 4px 4px 8px 2px rgb(192, 192, 192); /* Sets a box shadow effect on the image */
+  border-radius: 12px; /* Sets the border radius to create rounded corners */
+  overflow: hidden; /* Clips the image if it overflows its container */
+  }
+
+  .product-detail button {
+  cursor: pointer; /* Changes the cursor to a pointer */
+  margin: 40px 0; /* Sets the margin of the button */
+  font-size: 20px; /* Sets the font size of the button to 20 pixels */
+  padding: 10px 30px; /* Sets the padding of the button */
+  border: 2px solid; /* Sets the border properties of the button */
+  border-radius: 5px; /* Sets the border radius to create rounded corners */
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif; /* Sets the font family */
+  color: goldenrod; /* Sets the text color of the button */
+  background: #ffffff; /* Sets the background color of the button */
+  }
+
+  .product-detail button:hover {
+  background: goldenrod; /* Sets the background color of the button on hover */
+  color: #ffffff; /* Sets the text color of the button on hover */
+  }
+
+  /* Blog Detail */
+
+.Blog-detail {
+  position: relative; /* Sets the positioning context for the element */
+  width: 80%; /* Sets the width of the element to 85% of its parent element */
+  height: 500px; /* Sets the height of the element to 460 pixels */
+  margin: auto; /* Centers the element horizontally within its parent */
+  margin-top: 10px; /* Sets the top margin of the element */
+  display: flex;
+  }
+
+  .Blog-image img {
+    cursor: pointer; /* Changes the cursor to a pointer */
+    width: 40%; /* Sets the width of the image to 40% of its parent element */
+    height: auto; /* Automatically adjusts the height of the image while maintaining its aspect ratio */
+    position: absolute; /* Positions the element absolutely within its parent */
+    border-radius: 6px; /* Sets the border radius to create rounded corners */
+    transition: all 0.4s ease-in-out; /* Specifies the transition effect for the image */
+    }
+
+  .Blog-image img:hover {
+  transform: scale(1.1); /* Scales the image to 110% of its original size on hover */
+  }
+
+  .Blog-content {
+    position: absolute; /* Positions the element absolutely within its parent */
+    top: 30px; /* Sets the distance from the top edge of the positioned element to the top edge of its nearest positioned ancestor */
+    left: 650px; /* Sets the distance from the left edge of the positioned element to the left edge of its nearest positioned ancestor */
+    }
+
+  .Blog-content button {
+  margin: 27px auto; /* Sets the top and bottom margin to 27 pixels and left and right margin to auto */
+  padding: 10px 20px; /* Sets the padding of the button */
+  font-size: 18px; /* Sets the font size of the button to 18 pixels */
+  background-color: #000; /* Sets the background color of the button */
+  border: 2px solid #000; /* Sets the border properties of the button */
+  color: #fff; /* Sets the text color of the button */
+  border-radius: 6px; /* Sets the border radius to create rounded corners */
+  cursor: pointer; /* Changes the cursor to a pointer */
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif; /* Sets the font family */
+  }
+
+  .Blog-content button:hover {
+  border: 2px solid; /* Sets the border properties of the button on hover */
+  background: #fff; /* Sets the background color of the button on hover */
+  color: #000; /* Sets the text color of the button on hover */
+  }
+
+  /* Research-detail */
+  .Research-detail {
+  position: relative; /* Sets the positioning context for the element */
+  width: 85%; /* Sets the width of the element to 85% of its parent element */
+  height: 460px; /* Sets the height of the element to 460 pixels */
+  margin: auto; /* Centers the element horizontally within its parent */
+  margin-top: 60px; /* Sets the top margin of the element */
+  }
+
+  .Research-content {
+  position: absolute; /* Positions the element absolutely within its parent */
+  right: 47%; /* Sets the distance from the right edge of the positioned element to the right edge of its nearest positioned ancestor */
+  top: 18px; /* Sets the distance from the top edge of the positioned element to the top edge of its nearest positioned ancestor */
+  }
+  .Research-detail button {
+  margin: 25px auto; /* Sets the top and bottom margin to 25 pixels and left and right margin to auto */
+  padding: 8px 20px; /* Sets the padding of the button */
+  font-size: 18px; /* Sets the font size of the button to 18 pixels */
+  background-color: #073072; /* Sets the background color of the button */
+  border-color: rgba(0,0,0,0); /* Sets the border color of the button */
+  color: #fff; /* Sets the text color of the button */
+  border-radius: 6px; /* Sets the border radius to create rounded corners */
+  cursor: pointer; /* Changes the cursor to a pointer */
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif; /* Sets the font family */
+  }
+
+  .Research-detail button:hover {
+  background: #1e90ff; /* Sets the background color of the button on hover */
+  }
+  .Research-image img{
+      cursor: pointer; /* Sets the cursor to a pointer when hovering over the image */
+      width: 40%; /* Sets the width of the image to 40% of its container */
+      height: auto; /* Allows the height of the image to adjust automatically while maintaining its aspect ratio */
+      position: absolute; /* Positions the image absolutely within its parent container */
+      right: 0; /* Positions the image to the right of its container */
+      border-radius: 6px; /* Applies a border radius of 6 pixels to create rounded corners for the image */
+      transition: all 0.4s ease-in-out; /* Adds a transition effect with a duration of 0.4 seconds and an ease-in-out timing function to animate changes to all CSS properties of the image */
+  }
+
+          .Research-image img:hover {
+  transform: scale(1.1); /* Scales the image to 110% of its original size on hover */
+  }
+  
+
+  /* AboutUs-detail */
+  .AboutUs-detail {
+  position: relative; /* Sets the positioning context for the element */
+  width: 85%; /* Sets the width of the element to 85% of its parent element */
+  height: 460px; /* Sets the height of the element to 460 pixels */
+  margin: auto; /* Centers the element horizontally within its parent */
+  margin-top: 60px; /* Sets the top margin of the element */
+  }
+
+  .AboutUs-image img {
+  cursor: pointer; /* Changes the cursor to a pointer */
+  width: 40%; /* Sets the width of the image to 40% of its parent element */
+  height: auto; /* Automatically adjusts the height of the image while maintaining its aspect ratio */
+  position: absolute; /* Positions the element absolutely within its parent */
+  border-radius: 6px; /* Sets the border radius to create rounded corners */
+  transition: all 0.4s ease-in-out; /* Specifies the transition effect for the image */
+  }
+
+  .AboutUs-image img:hover {
+  transform: scale(1.1); /* Scales the image to 110% of its original size on hover */
+  }
+
+  .AboutUs-content {
+  position: absolute; /* Positions the element absolutely within its parent */
+  top: 30px; /* Sets the distance from the top edge of the positioned element to the top edge of its nearest positioned ancestor */
+  left: 650px; /* Sets the distance from the left edge of the positioned element to the left edge of its nearest positioned ancestor */
+  }
+
+  .AboutUs-content button {
+  margin: 27px auto; /* Sets the top and bottom margin to 27 pixels and left and right margin to auto */
+  padding: 10px 20px; /* Sets the padding of the button */
+  font-size: 18px; /* Sets the font size of the button to 18 pixels */
+  background-color: #fff; /* Sets the background color of the button */
+  border: 2px solid #000; /* Sets the border properties of the button */
+  color: #000; /* Sets the text color of the button */
+  border-radius: 6px; /* Sets the border radius to create rounded corners */
+  cursor: pointer; /* Changes the cursor to a pointer */
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif; /* Sets the font family */
+  }
+
+  .AboutUs-content button:hover {
+  border: 2px solid; /* Sets the border properties of the button on hover */
+  background: #000; /* Sets the background color of the button on hover */
+  color: #fff; /* Sets the text color of the button on hover */
+  }
+
+
+  /* ContactUs-detail */
+  .ContactUs-detail {
+  position: relative; /* Sets the positioning context for the element */
+  width: 100%; /* Sets the width of the element to 85% of its parent element */
+  height: 460px; /* Sets the height of the element to 460 pixels */
+  margin: auto; /* Centers the element horizontally within its parent */
+  margin-top: 80px; /* Sets the top margin of the element */
+  margin-bottom: 100px;
+  }
+  .ContactUs-image img {
+  cursor: pointer; /* Changes the cursor to a pointer */
+  width: 50%; /* Sets the width of the image to 40% of its parent element */
+  height: auto; /* Automatically adjusts the height of the image while maintaining its aspect ratio */
+  position: absolute; /* Positions the element absolutely within its parent */
+  transition: all 0.4s ease-in-out; /* Specifies the transition effect for the image */
+  right: 0;
+  top: 0;
+  }
+  .ContactUs-image img:hover {
+  transform: scale(1.05); /* Scales the image to 110% of its original size on hover */
+  }
+  .ContactUs-content{
+      background: #4d194d;
+      width: 50%;
+      height: 457px; 
+      padding: 80px 80px 80px 90px;   
+      font-size: 28px;
+      color: #fff;
+  }
+  .ContactUs-content p{
+      font-size: 17px;
+      padding-bottom: 15px;
+  }
+  .ContactUs-content button{
+      cursor: pointer;
+      margin-top: 20px;
+      background: #e64946;
+      border: none;
+      padding: 12px 28px;
+      color: #fff;
+      border-radius: 22px;
+      font-size: 15px;
+      font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif
+  }
+  .ContactUs-content button:hover{
+      background: #f37c79;
+  }

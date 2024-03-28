@@ -1,0 +1,72 @@
+/* ======== Colors ========== */
+:root {
+    --default-color: #27509B;
+    --default-color2: #377bf9;
+    --dark-color: #110E13;
+    --dark-color-alt: #3c4858;
+    --grey-color: #f9fafd;
+    --grey-color-alt: #8492a6;
+    --yellow: #F3E15B;
+    --white: #FFFFFF;
+}
+  
+  /* ======== Base ========== */
+  
+  *,*::after,*::before {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+  }
+  
+  html {
+    scroll-behavior: smooth;
+    font-size: 5px;
+  }
+  
+  body {
+    position: relative;
+    font-family: "poppins", sans-serif;
+    font-size: 8px;
+    font-weight: 400;
+    line-height: 1.6;
+    color: var(--dark-color);
+    background-color: var(--white);
+  }
+  
+  li,
+  ul {
+    list-style: none;
+  }
+  
+  a {
+    text-decoration: none;
+  }
+  
+  img {
+    max-width: 100%;
+    max-height: 100%;
+  }
+  
+  h2,
+  h3,
+  h4 {
+    font-weight: 600;
+  }
+
+  h2{
+    color: var(--default-color);
+  }
+  
+  .container {
+    max-width: 80%;
+    padding: 0 10px;
+    margin: 0 auto;
+  }
+
+  section{
+    background-color: var(white) !important;
+  }
+
+  .button{
+    font-size: 13px;
+  }

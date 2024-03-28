@@ -1,0 +1,125 @@
+/* Resetting margins, paddings, and box-sizing for all elements */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  /* Styling for the body element */
+  body {
+    font-family: 'Poppins','Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  }
+
+  /* Styling for all images */
+  img {
+    width: 100%; /* Set the image width to 100% of its container */
+    height: 100%; /* Set the image height to 100% of its container */
+  }
+
+  /* Styling for the image inside the .Hero-banner element */
+  .Hero-banner img {
+    margin-top: -10vh;
+    position: relative; /* Set the image position as relative */
+  }
+
+  /* Styling for the .contact-form class */
+  .contact-form {
+    width: 38%; /* Set the width of the contact form */
+    height: 960px; /* Set the height of the contact form */
+    background: #fff; /* Set the background color of the contact form */
+    position: absolute; /* Position the contact form absolutely within its container */
+    top: 20%; /* Position the contact form 20% from the top of its container */
+    right: 4%; /* Position the contact form 4% from the right of its container */
+    border: 0; /* Remove the border of the contact form */
+    box-shadow: 0 3px 18px rgba(0, 0, 0, .12); /* Add a box shadow to the contact form */
+    border-radius: 10px; /* Add rounded corners to the contact form */
+  }
+
+  /* Styling for the .Hero-text class */
+  .Hero-text {
+    position: absolute; /* Position the Hero-text absolutely within its container */
+    top: 20%; /* Position the Hero-text 40% from the top of its container */
+    left: 7%; /* Position the Hero-text 7% from the left of its container */
+    right: 40%; /* Position the Hero-text 40% from the right of its container */
+    color: #333333; /* Set the text color of the Hero-text */
+    font-size: 40px; /* Set the font size of the Hero-text */
+  }
+
+  /* Additional styling for the .contact-form class */
+  .contact-form {
+    padding: 20px; /* Add padding inside the contact form */
+  }
+
+  /* Styling for paragraphs inside the .contact-form class */
+  .contact-form p {
+    font-size: 32px; /* Set the font size of paragraphs inside the contact form */
+    font-weight: bold; /* Set the font weight of paragraphs inside the contact form */
+    padding-bottom: 30px; /* Add bottom padding to paragraphs inside the contact form */
+  }
+
+  /* Styling for labels */
+  label {
+    font-size: 20px; /* Set the font size of labels */
+  }
+
+  /* Styling for input elements inside labels */
+  label input {
+    background-color: #f4f4f4; /* Set the background color of input elements */
+    height: 50px; /* Set the height of input elements */
+    border: 0; /* Remove the border of input elements */
+    width: 100%; /* Set the width of input elements to 100% */
+    padding: 0 15px; /* Add left and right padding to input elements */
+    border-radius: 4px; /* Add rounded corners to input elements */
+  }
+
+  /* Styling for textarea elements inside labels */
+  label textarea {
+    background-color: #f4f4f4; /* Set the background color of textarea elements */
+    border-radius: 4px; /* Add rounded corners to textarea elements */
+    padding: 15px; /* Add padding to textarea elements */
+    border: 0; /* Remove the border of textarea elements */
+  }
+
+  /* Styling for the button inside the .contact-form class */
+  .contact-form button {
+    color: #fff; /* Set the text color of the button */
+    background-color: #122c91; /* Set the background color of the button */
+    border-color: #122c91; /* Set the border color of the button */
+    font-weight: 600; /* Set the font weight of the button */
+    padding: 12px 15px; /* Add padding to the button */
+    font-size: 20px; /* Set the font size of the button */
+    cursor: pointer; /* Set the cursor type to pointer on the button */
+    width: 100%; /* Set the width of the button to 100% */
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif; /* Set the font family of the button */
+    border-radius: 4px; /* Add rounded corners to the button */
+  }
+
+  /* Styling for the button inside the .contact-form class on hover */
+  .contact-form button:hover {
+    color: #fff; /* Set the text color of the button on hover */
+    background: #0b5ed7; /* Set the background color of the button on hover */
+    border-color: #0a58ca; /* Set the border color of the button on hover */
+  }
+
+  /* Styling for the .contact-detail class */
+  .contact-detail {
+    width: 92%; /* Set the width of the contact-detail class */
+    margin: 70px auto; /* Add margin to the contact-detail class */
+  }
+
+  /* Styling for paragraphs inside the .contact-detail class */
+  .contact-detail p {
+    font-size: 19px; /* Set the font size of paragraphs inside the contact-detail class */
+    margin-bottom: 20px; /* Add bottom margin to paragraphs inside the contact-detail class */
+  }
+
+  /* Styling for images inside paragraphs */
+  .contact-detail p img {
+    width: 21px; /* Set the width of images inside paragraphs */
+    margin-right: 15px; /* Add right margin to images inside paragraphs */
+  }
+
+  /* Styling for spans inside paragraphs */
+  p span {
+    margin-left: 35px; /* Add left margin to spans inside paragraphs */
+  }

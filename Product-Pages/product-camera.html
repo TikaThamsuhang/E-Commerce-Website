@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Page 1</title>
+
+  <!-- Custon CSS -->
+  <link rel="stylesheet" href="../CSS/header.css">
+  <link rel="stylesheet" href="../CSS/footer.css">
+  <link rel="stylesheet" href="../CSS/home-page.css">
+  <link rel="stylesheet" href="../CSS/camera.css">
+
+
+
+</head>
+
+<body>
+
+  <!-- Header of the page -->
+  <header id="header" class="header">
+
+    <!-- navigation for the website -->
+    <div class="navigation">
+      <div class="container">
+        <nav class="nav__center">
+          <div class="nav__header">
+            <div class="nav__logo">
+             <a href="../index.html"> <h1>Digital<span>Eye.</span></h1></a>
+            </div>
+          </div>
+
+          <div class="nav__menu">
+            <ul class="nav__list">
+              <li class="nav__item">
+                <a href="../index.html" class="nav__link">Home</a>
+              </li>
+
+              <li class="nav__item">
+                <a href="../product.html" class="nav__link">Product</a>
+              </li>
+
+              <li class="nav__item">
+                <a href="../reserch.html class="nav__link">Reserch</a>
+              </li>
+
+              <li class="nav__item">
+                <a href="../contact-us.html" class="nav__link">Contact</a>
+              </li>
+
+              <li class="nav__item">
+                <a href="../blog.html" class="nav__link">Blog</a>
+              </li>
+
+              <li class="nav__item">
+                <a href="../about-us.html" class="nav__link">About Us</a>
+              </li>
+            </ul>
+
+            <ul class="nav__icons">
+              <a href="#" class="icon__item">
+                <svg>
+                  <use xlink:href="../Assets/sprite.svg#icon-search"></use>
+                </svg>
+              </a>
+
+              <a href="#" class="icon__item">
+                <svg>
+                  <use xlink:href="../Assets/sprite.svg#icon-user"></use>
+                </svg>
+              </a>
+
+              <a href="#" class="icon__item">
+                <svg>
+                  <use xlink:href="../Assets/sprite.svg#icon-shopping-basket"></use>
+                </svg>
+                <span>2</span>
+              </a>
+            </ul>
+          </div>
+        </nav>
+      </div>
+    </div>
+  </header>
+
+  <main>
+
+    <main class="container">
+
+      <!-- Left Column / Headphones Image -->
+      <div class="left-column">
+        <img data-image="type-1" src="../Assets/Product-page/images/Sony-image-1.webp" alt="">
+        <img data-image="type-2" src="../Assets/Product-page/images/Sony-image-2.jpg" alt="">
+        <img data-image="type-3" class="active" src="../Assets/Product-page/images/Sony-image-3.jpg" alt="">
+        <img data-image="type-4" src="../Assets/Product-page/images/Sony-image-4.jpg" alt="">
+      </div>
+
+
+      <!-- Right Column -->
+      <div class="right-column">
+
+        <!-- Product Description -->
+        <div class="product-description">
+          <span>Sony Camera</span>
+          <h1>Erson Mark IV</h1>
+          <p>the perfect camera for the professionals</p>
+        </div>
+
+        <!-- Product Configuration -->
+        <div class="product-configuration">
+
+          <!-- Product Color -->
+          <div class="image-angle">
+            <span>Options</span>
+
+            <div class="image-choose">
+              <div>
+                <input data-image="type-1" type="radio" id="type-1" name="imagetype" value="type-1" checked>
+                <label for="type-1"><span></span></label>
+              </div>
+              <div>
+                <input data-image="type-2" type="radio" id="type-2" name="imagetype" value="type-2">
+                <label for="type-2"><span></span></label>
+              </div>
+              <div>
+                <input data-image="type-3" type="radio" id="type-3" name="imagetype" value="type-3">
+                <label for="type-3"><span></span></label>
+              </div>
+              <div>
+                <input data-image="type-4" type="radio" id="type-4" name="imagetype" value="type-4">
+                <label for="type-4"><span></span></label>
+              </div>
+            </div>
+
+          </div>
+
+          <!-- Cable Configuration -->
+          <div class="cable-config">
+            <span>Cable configuration</span>
+
+            <div class="cable-choose">
+              <button>Straight</button>
+              <button>Coiled</button>
+              <button>Long-coiled</button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Product Pricing -->
+        <div class="product-price">
+          <span>Rs. 1,65,000</span>
+          <a href="#" class="cart-btn">Add to cart</a>
+        </div>
+      </div>
+    </main>
+
+  </main>
+
+  <!-- Footer of the Page -->
+  <footer id="footer" class="section footer">
+    <div class="container">
+      <div class="footer__top">
+        <div class="footer-top__box">
+          <h3>Shop Here</h3>
+          <a href="../product.html">Cameras</a>
+          <a href="../product.html">Lenses</a>
+          <a href="../product.html">Accessories</a>
+          <a href="../product.html">Offers</a>
+        </div>
+        <div class="footer-top__box">
+          <h3>INFORMATION</h3>
+          <a href="../about-us.html">About Us</a>
+          <a href="#">Privacy Policy</a>
+          <a href="#">Terms & Conditions</a>
+          <a href="../contact-us.html">Get in Touch</a>
+        </div>
+        <div class="footer-top__box">
+          <h3>CONTACT US</h3>
+          <div>
+            <span>
+              <svg>
+                <use xlink:href="../Assets/sprite.svg#icon-location"></use>
+              </svg>
+            </span>
+            Kathmandu, Nepal
+          </div>
+          <div>
+            <span>
+              <svg>
+                <use xlink:href="../Assets/sprite.svg#icon-envelop"></use>
+              </svg>
+            </span>
+            <a href="mailto:info@de.birendrao1@gmail.com.com"">info@digitaleye.com</a>
+          </div>
+          <div>
+            <span>
+              <svg>
+                <use xlink:href="../Assets/sprite.svg#icon-phone"></use>
+              </svg>
+            </span>
+            <a href="tel:+77 9810042188">+977 986960081</a>
+          </div>
+          <div>
+            <span>
+              <svg>
+                <use xlink:href="../Assets/sprite.svg#icon-paperplane"></use>
+              </svg>
+            </span>
+            San Fransisco, Califonia
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+
+  <script src="../JS/header.js"></script>
+  <script src="../JS/Product-Page/product-display.js"></script>
+</body>
+
+</html>

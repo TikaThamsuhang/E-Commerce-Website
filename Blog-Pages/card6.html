@@ -1,0 +1,407 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Impact of technology while selling Camera Equipment</title>
+    <link rel="stylesheet" href="BlogCss/style.css">
+
+    <!-- Custon CSS -->
+  <link rel="stylesheet" href="./CSS/header.css">
+  <link rel="stylesheet" href="./CSS/footer.css">
+  <link rel="stylesheet" href="./CSS/home-page.css">
+
+    <style>
+    
+        .container{
+            width: 1230px;
+            height: auto;
+           
+            margin: auto;
+            margin-top: 80px;
+            display: flex;
+        }
+        .icons{
+            margin: 80px 40px;
+            position: absolute;
+        }
+        .icons ul {
+            list-style: none;
+    text-align: center;
+    padding: 8px 0;
+    
+        }
+        .icons ul li{
+            padding: 6px 0;
+        }
+        .content{
+        padding: 0px 105px;
+        margin:0 112px;
+        }
+        .content h1{
+            font-size: 39px;
+            margin-bottom: 15px;
+        }
+        .content img{
+            width: 777px;
+
+        }
+        .icons ul li a img{
+      width: 32px;
+    border: 1px solid;
+    border-radius: 26%;
+    padding: 5px;
+    }
+    .icons ul li a img:hover{
+      background-color: #a9a9a9;
+      border: 1px solid #a9a9a9;
+    }
+        .icons button{
+          border: white;
+          background: white;
+          cursor: pointer;
+          margin-top: 18px;
+        }
+        .icons button img{
+          width: 45px;
+    background: white;
+    padding: 4px;
+        }
+        .icons button img:hover{
+          width: 45px;
+          background: white; 
+          padding: 0px; 
+        }
+        .nav a{
+            border: 1px ;
+    text-decoration: none;
+    background: rgba(0,0,0,.05);
+    color: rgba(0,0,0,.6);
+    border-radius: 3px;
+    padding: 8px 12px;
+    display: inline-block;
+    margin-right: 4px;
+        }
+        .para{
+            margin-top: 25px;
+            display: flex;
+        }
+        .para p::before{ /* the '::before' pseudo-element is used to insert the content before the paragraph element, and the '\00AB' value represents the Unicode code point for the "«" symbol.*/
+            content: "\00AB";
+        } 
+        .para-text{
+            border-top: 1px solid #a9a9a9;
+    width: 50%;
+    height: auto;
+    padding: 15px 0px;
+    
+    border-bottom: 1px solid #a9a9a9;
+    font-size: 20px;
+        }
+        .para-box{
+            border-top: 1px solid #a9a9a9;
+    width: 50%;
+    height: auto;
+    padding: 15px 0px;
+    border-left: 1px solid #a9a9a9;
+    border-bottom: 1px solid #a9a9a9;
+        }
+      .comments{
+        width: 800px;
+        margin: auto;
+        height: 700px;
+
+      }
+      .row{
+        display: flex;
+        justify-content: space-between;
+        margin: 18px 0;
+      }
+      .row label input{
+      width: 243px;
+    height: 38px;
+    padding: 8px;
+    border-radius: 2px;
+    background: #f0f8ff;
+    border: #f0f8ff;
+    font-family:'Josefin Sans', sans-serif;
+      }
+      textarea{
+        padding: 15px 12px;
+    border: #f0f8ff;
+    border-radius: 3px;
+    background: #f0f8ff;
+      }
+    .comments button{
+      margin: 6px 0;
+    padding: 10px;
+    background-color: #1C9963;
+    border-color: #1C9963;
+    color: #f0f8ff;
+    font-size: 16px;
+    border-radius: 4px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    cursor: pointer;
+    }
+    .comments button:hover{
+      background-color: #33cc33;
+      border-color: #33cc33;
+    }
+    </style>
+</head>
+<body>
+  <header id="header" class="header">
+
+    <!-- navigation for the website -->
+    <div class="navigation">
+      <div class="container">
+        <nav class="nav__center">
+          <div class="nav__header">
+            <div class="nav__logo">
+              <a href="./index.html">
+                <h1>Digital<span>Eye.</span></h1>
+              </a>
+            </div>
+          </div>
+
+          <div class="nav__menu">
+            <ul class="nav__list">
+              <li class="nav__item">
+                <a href="./index.html" class="nav__link">Home</a>
+              </li>
+
+              <li class="nav__item">
+                <a href="./product.html" class="nav__link">Product</a>
+              </li>
+
+              <li class="nav__item">
+                <a href="./reserch.html" class="nav__link">Reserch</a>
+              </li>
+
+              <li class="nav__item">
+                <a href="./contact-us.html" class="nav__link">Contact</a>
+              </li>
+
+              <li class="nav__item">
+                <a href="./blog.html" class="nav__link">Blog</a>
+              </li>
+
+              <li class="nav__item">
+                <a href="./about-us.html" class="nav__link">About Us</a>
+              </li>
+            </ul>
+
+            <ul class="nav__icons">
+              <a href="#" class="icon__item">
+                <svg>
+                  <use xlink:href="./Assets/sprite.svg#icon-search"></use>
+                </svg>
+              </a>
+
+              <a href="#" class="icon__item">
+                <svg>
+                  <use xlink:href="./Assets/sprite.svg#icon-user"></use>
+                </svg>
+              </a>
+
+              <a href="#" class="icon__item">
+                <svg>
+                  <use xlink:href="./Assets/sprite.svg#icon-shopping-basket"></use>
+                </svg>
+                <span>2</span>
+              </a>
+            </ul>
+          </div>
+        </nav>
+      </div>
+    </div>
+</header>
+
+    <section class="container">
+      <div class="icons">
+        <p>Share</p>
+           <ul>
+            <li><a href="https://www.facebook.com/sharer/sharer.php?u=http://127.0.0.1:5500/card1.html" target="_blank">
+              <img src="BlogImages/facebook.png" alt="facebook"></a>
+            </li>
+            <li><a href="https://api.whatsapp.com/send?text=How Technology Affects Daily Life and Business:http://127.0.0.1:5500/card1.html" target="_blank">
+              <img src="BlogImages/whatsapp.png" alt="whatsapp"></a>
+            </li>
+            <li><a href="https://twitter.com/intent/tweet?url=http://127.0.0.1:5500/card.html&text=How Technology Affects Daily Life and Business" target="_blank">
+              <img src="BlogImages/twitter.png" alt="twitter"></a>
+            </li>
+            <li><a href="https://www.linkedin.com/sharing/share-offsite/?url=http://127.0.0.1:5500/card1.html" target="_blank"> 
+              <img src="BlogImages/linkedin.png" alt="linkedin"></a>
+            </li>
+           </ul>
+           <hr style="margin: 18px 0;">
+           <p>Reply</p>
+           <button><img src="BlogImages/reply.png" alt="reply image" id="scrollButton">
+           </button>
+
+    </div>
+        <div class="content">
+            <h1>Impact of technology while selling Camera Equipment</h1>
+            <p style="margin-bottom: 30px;">May 9, 2023</p>
+            <img src="BlogImages/card6Image.jpg" alt="card6 image" style="width: 795px;">
+            <p style="padding-top: 30px; line-height: 1.5; font-size: 19px; text-align: justify; margin-bottom: 30px;">
+                The impact of technology on selling camera equipment has been transformative, revolutionizing the way the industry operates and the experience for both sellers and buyers. Technology has brought numerous benefits and opportunities, while also introducing some challenges.
+                <br><br>
+                One significant impact of technology is the ability to reach a wider audience and expand the market reach for camera equipment sellers. Online platforms and marketplaces have made it easier than ever to connect with potential customers worldwide. Sellers can create online stores, showcase their products, and reach a global customer base, expanding their sales opportunities and revenue potential.
+                <br><br>
+                Additionally, technology has enabled a more immersive and informative shopping experience for buyers. High-resolution product images, detailed descriptions, and customer reviews allow potential buyers to make informed decisions. Virtual reality (VR) and augmented reality (AR) technologies have also emerged, allowing customers to virtually try out cameras and accessories before making a purchase, enhancing the online shopping experience.
+                <br><br>
+                Furthermore, technology has greatly facilitated the selling process itself. Inventory management systems, e-commerce platforms, and digital payment solutions streamline the selling process, making it more efficient and reducing administrative overhead for sellers. Automation tools can help manage product listings, pricing, and order fulfillment, freeing up time for sellers to focus on other aspects of their business.
+                <br><br>
+                However, the impact of technology on selling camera equipment also poses some challenges. The rapid advancements in technology mean that camera models and features are continuously evolving, leading to shorter product cycles. This creates a need for camera equipment sellers to stay up-to-date with the latest trends and technological advancements to meet customer demands.
+                <br><br>
+                Moreover, the digital landscape introduces increased competition. With the ease of setting up an online presence, more sellers enter the market, intensifying competition for buyers' attention and sales. Camera equipment sellers must differentiate themselves through unique offerings, exceptional customer service, and building trust with their target audience.
+                <br><br>
+                In conclusion, technology has profoundly impacted the selling of camera equipment, bringing benefits such as expanded market reach, immersive shopping experiences, and streamlined selling processes. However, sellers must navigate the challenges posed by rapid technological advancements and increased competition to thrive in this dynamic industry. Adapting to the ever-changing technological landscape and focusing on customer satisfaction will be key to success in selling camera equipment.
+            </p>
+                <div class="nav">
+                    <a href="">Home</a>
+                    <a href="">About US</a>
+                    <a href="">Our Products</a>
+                </div>
+                <div class="para">
+                    <div class="para-text">
+                    <a href="card7.html"><p><strong>The Future of Technology: Navigating the Opportunities and Challenges Ahead</strong></p></a>
+                </div>
+                <div class="para-box">
+
+                </div>
+                </div>
+        </div>
+          
+    </section>
+   <section class="post-cards">
+        <div class="flex-card1">
+
+            <div class="card" id="card1">
+                <a href="card1.html"><img src="BlogImages/card1.jpg" alt="card1 image">
+                <div class="card-detail">
+                <h2>The Impact of Technology on Daily Life and Business: A Demonstration</h2></a>
+                <p>Technology profoundly shapes daily life and business, driving an unparalleled pace of transformation. From communication to information access, shopping to work processes, it revolutionizes how we live and interact, consistently introducing innovative advancements that redefine our world.</p>
+                <hr style="margin-top: 30px;">
+                <p style="padding-top: 13px;">May 4, 2023</p>
+            </div>
+            </div>
+            <div class="card" id="card2">
+                <a href="card2.html"><img src="BlogImages/card2.jpg" alt="card2 image">
+                <div class="card-detail">
+                  <h2>Exploring the Role of Technology in Shaping the Modern World</h2></a>
+                  <p>As we continue to push the boundaries of what technology can achieve, it's essential to explore the role that technology plays in shaping the modern world, from transforming the way we work, communicate, and learn, to enabling us to address some of the most pressing global challenges we face.</p>
+                  <hr style="margin-top: 30px;">
+                  <p style="padding-top: 13px;">May 5, 2023</p>
+                </div>
+            </div>
+            <div class="card" id="card3">
+                <a href="card3.html"><img src="BlogImages/card3.jpg" alt="card3 image">
+                <div class="card-detail">                
+                  <h2>The Advancements in Technology and Their Effect on Business and Society</h2></a>
+                  <p>The advancements in technology are rapidly changing the way that businesses operate and the way that we interact with each other, with far-reaching effects on society as a whole, from creating new industries and employment opportunities to changing the way that we communicate, access information, and solve complex problems.</p>
+                  <hr style="margin-top: 13px;">
+                  <p style="padding-top: 13px;">May 6, 2023</p>
+                </div>
+                
+                  
+              </div>
+          
+        </div>
+    </section>
+
+    <section class="comments" id="section3">
+           <form onsubmit="validateForm()" name="messageForm">
+            <label>Leave a Reply<br><br><textarea name="Message" rows="13" cols="104" placeholder="Write your response..." style="padding: 15px 12px;"></textarea></label>
+            <br>
+            <div class="row">
+            <label><input type="text" placeholder="Name" name="Name" size="20"></label>
+            <label><input type="text" placeholder="E-mail address" name="Email"></label>
+            <label><input type="text" placeholder="Website link"></label>
+          </div>
+          <button>Post Comment</button>
+           </form>
+    </section>
+    <script>
+      document.getElementById("scrollButton").addEventListener("click", function() {
+      document.getElementById("section3").scrollIntoView({ behavior: 'smooth' });
+      });
+      </script>
+      <script>
+        function validateForm(){
+          var Name=document.forms["messageForm"]["Name"].value;
+          var Email=document.forms["messageForm"]["Email"].value;
+          var Message=document.forms["messageForm"]["Message"].value;
+    
+          if(Name=="" || Email=="" || Message==""){
+            alert("Empty fields found. Please fill the form.");
+          }else{
+            alert("Thank you for the feedback.");
+          }
+          
+        }
+      </script> 
+
+       <!-- Footer of the Page -->
+  <footer id="footer" class="section footer">
+    <div class="container">
+      <div class="footer__top">
+        <div class="footer-top__box">
+          <h3>Shop Here</h3>
+          <a href="./product.html">Cameras</a>
+          <a href="./product.html">Lenses</a>
+          <a href="./product.html">Accessories</a>
+          <a href="./product.html">Offers</a>
+        </div>
+        <div class="footer-top__box">
+          <h3>INFORMATION</h3>
+          <a href="./about-us.html">About Us</a>
+          <a href="#">Privacy Policy</a>
+          <a href="#">Terms & Conditions</a>
+          <a href="./contact-us.html">Get in Touch</a>
+        </div>
+        <div class="footer-top__box">
+          <h3>CONTACT US</h3>
+          <div>
+            <span>
+              <svg>
+                <use xlink:href="./Assets/sprite.svg#icon-location"></use>
+              </svg>
+            </span>
+            Kathmandu, Nepal
+          </div>
+          <div>
+            <span>
+              <svg>
+                <use xlink:href="./Assets/sprite.svg#icon-envelop"></use>
+              </svg>
+            </span>
+            <a href="mailto:info@de.birendrao1@gmail.com.com"">info@digitaleye.com</a>
+          </div>
+          <div>
+            <span>
+              <svg>
+                <use xlink:href=" ./Assets/sprite.svg#icon-phone"> </use> </svg> </span> <a
+              href="tel:+77 9810042188">+977 986960081</a>
+          </div>
+          <div>
+            <span>
+              <svg>
+                <use xlink:href="./Assets/sprite.svg#icon-paperplane"></use>
+              </svg>
+            </span>
+            San Fransisco, Califonia
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+
+  <!-- Importing JavaScript -->
+  <script src="./JS/header.js"></script>
+  <script src="./JS/Home-Page/slider.js"></script>
+</body>
+</html>

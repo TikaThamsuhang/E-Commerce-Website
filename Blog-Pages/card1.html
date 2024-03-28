@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta name="author" content="Tika Thamsuhang">
+	<meta name="description" content="E-commerce website">
+	<meta name="keywords" content="HTML">
+    <title>The Impact of Technology on Daily Life and Business: A Demonstration</title>
+    <link rel="stylesheet" href="BlogCss/style.css">
+    <style>
+      .container {
+          width: 1230px; /* Sets the width of the container element */
+          height: auto; /* Allows the height to adjust automatically */
+          margin: auto; /* Centers the container horizontally */
+          margin-top: 80px; /* Adds top margin to the container */
+          display: flex; /* Uses flexbox for layout */
+      }
+  
+      .icons {
+          margin: 80px 40px; /* Sets the margin around the icons element */
+          position: absolute; /* Positions the icons element absolutely */
+      }
+  
+      .icons ul {
+          list-style: none; /* Removes the default list bullet points */
+          text-align: center; /* Centers the text within the list */
+          padding: 8px 0; /* Adds padding to the top and bottom of the list */
+      }
+  
+      .icons ul li {
+          padding: 6px 0; /* Adds padding to the top and bottom of each list item */
+      }
+  
+      .content {
+          padding: 0px 105px; /* Adds padding to the content element */
+          margin: 0 112px; /* Adds margin to the content element */
+      }
+  
+      .content h1 {
+          font-size: 39px; /* Sets the font size of the heading */
+          margin-bottom: 15px; /* Adds bottom margin to the heading */
+      }
+  
+      .content img {
+          width: 777px; /* Sets the width of the images */
+      }
+  
+      .icons ul li a img {
+          width: 32px; /* Sets the width of the images within anchor tags */
+          border: 1px solid; /* Adds a border to the images */
+          border-radius: 26%; /* Rounds the corners of the images */
+          padding: 5px; /* Adds padding around the images */
+      }
+  
+      .icons ul li a img:hover {
+          background-color: #a9a9a9; /* Changes the background color of the images on hover */
+          border: 1px solid #a9a9a9; /* Changes the border color of the images on hover */
+      }
+  
+      .icons button {
+          border: white; /* Sets the border color of the buttons */
+          background: white; /* Sets the background color of the buttons */
+          cursor: pointer; /* Changes the cursor to a pointer on hover */
+          margin-top: 18px; /* Adds top margin to the buttons */
+      }
+  
+      .icons button img {
+          width: 45px; /* Sets the width of the images within buttons */
+          background: white; /* Sets the background color of the images within buttons */
+          padding: 4px; /* Adds padding around the images within buttons */
+      }
+  
+      .icons button img:hover {
+          width: 45px; /* Sets the width of the images within buttons on hover */
+          background: white; /* Sets the background color of the images within buttons on hover */
+          padding: 0px; /* Removes padding around the images within buttons on hover */
+      }
+  
+      .nav a {
+          border: 1px; /* Sets the border style of the links */
+          text-decoration: none; /* Removes the underline from the links */
+          background: rgba(0, 0, 0, .05); /* Sets the background color of the links */
+          color: rgba(0, 0, 0, .6); /* Sets the text color of the links */
+          border-radius: 3px; /* Rounds the corners of the links */
+          padding: 8px 12px; /* Adds padding to the links */
+          display: inline-block; /* Displays the links as inline-block elements */
+          margin-right: 4px; /* Adds right margin to the links */
+      }
+  
+      .para {
+          margin-top: 25px; /* Adds top margin to the paragraph section */
+          display: flex; /* Uses flexbox for layout */
+      }
+  
+      .para p::before {
+          content: "\00AB"; /* Inserts the "«" symbol before each paragraph */
+      }
+  
+      .para-text {
+          border-top: 1px solid #a9a9a9; /* Adds a top border to the text paragraph */
+          width: 50%; /* Sets the width of the text paragraph */
+          height: auto; /* Allows the height to adjust automatically */
+          padding: 15px 0px; /* Adds padding to the text paragraph */
+          border-bottom: 1px solid #a9a9a9; /* Adds a bottom border to the text paragraph */
+          font-size: 20px; /* Sets the font size of the text paragraph */
+      }
+  
+      .para-box {
+          border-top: 1px solid #a9a9a9; /* Adds a top border to the box paragraph */
+          width: 50%; /* Sets the width of the box paragraph */
+          height: auto; /* Allows the height to adjust automatically */
+          padding: 15px 0px; /* Adds padding to the box paragraph */
+          border-left: 1px solid #a9a9a9; /* Adds a left border to the box paragraph */
+          border-bottom: 1px solid #a9a9a9; /* Adds a bottom border to the box paragraph */
+      }
+  
+      .comments {
+          width: 800px; /* Sets the width of the comments section */
+          margin: auto; /* Centers the comments section horizontally */
+          height: 700px; /* Sets the height of the comments section */
+      }
+  
+      .row {
+          display: flex; /* Uses flexbox for layout */
+          justify-content: space-between; /* Distributes the items evenly along the horizontal axis */
+          margin: 18px 0; /* Adds margin to the row */
+      }
+  
+      .row label input {
+          width: 243px; /* Sets the width of the input fields within labels */
+          height: 38px; /* Sets the height of the input fields within labels */
+          padding: 8px; /* Adds padding to the input fields within labels */
+          border-radius: 2px; /* Rounds the corners of the input fields within labels */
+          background: #f0f8ff; /* Sets the background color of the input fields within labels */
+          border: #f0f8ff; /* Sets the border color of the input fields within labels */
+          font-family: 'Josefin Sans', sans-serif; /* Sets the font family of the input fields within labels */
+      }
+  
+      textarea {
+          padding: 15px 12px; /* Adds padding to the textarea element */
+          border: #f0f8ff; /* Sets the border color of the textarea element */
+          border-radius: 3px; /* Rounds the corners of the textarea element */
+          background: #f0f8ff; /* Sets the background color of the textarea element */
+      }
+  
+      .comments button {
+          margin: 6px 0; /* Adds margin to the button element */
+          padding: 10px; /* Adds padding to the button element */
+          background-color: #1C9963; /* Sets the background color of the button element */
+          border-color: #1C9963; /* Sets the border color of the button element */
+          color: #f0f8ff; /* Sets the text color of the button element */
+          font-size: 16px; /* Sets the font size of the button element */
+          cursor: pointer; /* Changes the cursor to a pointer on hover */
+      }
+  
+      .comments button:hover {
+          background-color: #13B286; /* Changes the background color of the button element on hover */
+          border-color: #13B286; /* Changes the border color of the button element on hover */
+      }
+  </style>
+</head>
+<body>
+    <header></header>
+
+    <section class="container">
+      <div class="icons">
+        <p>Share</p>
+           <ul>
+            <li><a href="https://www.facebook.com/sharer/sharer.php?u=http://127.0.0.1:5500/card1.html" target="_blank">
+              <img src="BlogImages/facebook.png" alt="facebook"></a>
+            </li>
+            <li><a href="https://api.whatsapp.com/send?text=How Technology Affects Daily Life and Business:http://127.0.0.1:5500/card1.html" target="_blank">
+              <img src="BlogImages/whatsapp.png" alt="whatsapp"></a>
+            </li>
+            <li><a href="https://twitter.com/intent/tweet?url=http://127.0.0.1:5500/card.html&text=How Technology Affects Daily Life and Business" target="_blank">
+              <img src="BlogImages/twitter.png" alt="twitter"></a>
+            </li>
+            <li><a href="https://www.linkedin.com/sharing/share-offsite/?url=http://127.0.0.1:5500/card1.html" target="_blank"> 
+              <img src="BlogImages/linkedin.png" alt="linkedin"></a>
+            </li>
+           </ul>
+           <hr style="margin: 18px 0;">
+           <p>Reply</p>
+           <button><img src="BlogImages/reply.png" alt="reply image" id="scrollButton">
+           </button>
+
+    </div>
+        <div class="content">
+            <h1>The Impact of Technology on Daily Life and Business: A Demonstration</h1>
+            <p style="margin-bottom: 30px;">May 5, 2023</p>
+            <img src="BlogImages/card1Image.jpg" alt="card1 image" style="width:795px">
+            <p style="padding-top: 30px; line-height: 1.5; font-size: 19px; text-align: justify; margin-bottom: 30px;">
+                    "The Impact of Technology on Daily Life and Business: A Demonstration" is a broad topic that explores how technology has transformed our lives and businesses. In recent years, technology has become increasingly prevalent in almost every aspect of our daily lives, from the way we communicate with each other to the way we shop, work, and entertain ourselves.
+                    <br><br>
+                    One of the most significant impacts of technology on daily life has been the rise of social media and the widespread adoption of smartphones. These technologies have revolutionized the way we communicate with each other, making it easier than ever to stay connected with friends and family around the world. At the same time, they have also raised concerns around privacy and data protection, with many people worried about the amount of personal information that is being collected and shared online.
+                    <br><br>
+                    In the business world, technology has transformed the way that companies operate. The rise of e-commerce, for example, has made it easier than ever for businesses to connect with customers and sell products online. Digital marketing and advertising have also become more prevalent, as businesses leverage the power of social media and other digital channels to reach their target audience.
+                    <br><br>
+                    However, the adoption of new technologies can also present challenges. Companies may struggle to keep up with the pace of technological change, or they may face resistance from employees who are uncomfortable with new tools or processes. Cybersecurity has also become a critical issue, as businesses look to protect sensitive data from the growing threat of cybercrime.
+                    <br><br>
+                    Looking to the future, emerging technologies such as artificial intelligence, the Internet of Things, and blockchain are likely to further transform our lives and businesses. AI, for example, has the potential to automate many routine tasks, freeing up workers to focus on higher-level tasks that require more creativity and problem-solving skills. The IoT, meanwhile, is enabling the creation of smart homes and smart cities, while blockchain is revolutionizing the way that businesses store and manage data.
+                    <br><br>
+                    Overall, "The Impact of Technology on Daily Life and Business: A Demonstration" is a topic that can be explored in many different ways, with many different facets to consider. A demonstration of how technology has impacted daily life and business can help readers gain a deeper understanding of the role technology plays in our modern world, as well as the challenges and opportunities it presents for individuals and businesses alike.
+                </p>
+                <div class="nav">
+                    <a href="">Home</a>
+                    <a href="">About Us</a>
+                    <a href="">Our Products</a>
+                </div>
+                <div class="para">
+                    <div class="para-text">
+                    <a href="card2.html"><p><strong>Exploring the Role of Technology in Shaping the Modern World</strong></p></a>
+                </div>
+                <div class="para-box">
+
+                </div>
+                </div>
+        </div>
+          
+    </section>
+   <section class="post-cards">
+        <div class="flex-card1">
+            <div class="card" id="card3">
+              <a href="card3.html"><img src="BlogImages/card3.jpg" alt="card3 image">
+              <div class="card-detail">                
+                <h2>The Advancements in Technology and Their Effect on Business and Society</h2></a>
+                <p>The advancements in technology are rapidly changing the way that businesses operate and the way that we interact with each other, with far-reaching effects on society as a whole, from creating new industries and employment opportunities to changing the way that we communicate, access information, and solve complex problems.</p>
+                <hr style="margin-top: 13px;">
+                <p style="padding-top: 13px;">May 6, 2023</p>
+              </div>         
+                      
+            </div>
+            <div class="card" id="card4">
+                <a href="card4.html"><img src="BlogImages/card4.jpg" alt="card4 image">
+                <div class="card-detail">
+                  <h2>The Digital Era: How Technology is Transforming the Way We Live and Work</h2></a>
+                  <p>The digital era is fundamentally transforming the way we live and work, with technology enabling us to connect, collaborate, and create in new and innovative ways, while also presenting us with unprecedented challenges and opportunities.</p>
+                  <hr style="margin-top: 46px;">
+                  <p style="padding-top: 13px;">May 7, 2023</p>
+                  </div>        
+              </div>
+              <div class="card" id="card5">
+                <a href="card5.html"><img src="BlogImages/card5.jpg" alt="card5 image">
+                <div class="card-detail"> 
+                  <h2>The Pros and Cons of Technology in Daily Life and Business: A Practical Demonstration</h2></a>
+                  <p>As technology continues to transform our daily lives and businesses, it's important to weigh the pros and cons of its use through a practical demonstration that highlights both the benefits and potential drawbacks.</p>
+                  <hr style="margin-top: 37px;">
+                  <p style="padding-top: 13px;">May 8,2023</p>
+                  </div>                
+              </div>
+        </div>
+    </section>
+
+    <section class="comments" id="section3">
+           <form onsubmit="validateForm()" name="messageForm">
+            <label>Leave a Reply<br><br><textarea name="Message" rows="13" cols="104" placeholder="Write your response..." style="padding: 15px 12px;"></textarea></label>
+            <br>
+            <div class="row">
+            <label><input type="text" placeholder="Name" name="Name" size="20"></label>
+            <label><input type="text" placeholder="E-mail address" name="Email"></label>
+            <label><input type="text" placeholder="Website link"></label>
+          </div>
+          <button>Post Comment</button>
+           </form>
+    </section>
+    <script>
+      document.getElementById("scrollButton").addEventListener("click", function() {
+      document.getElementById("section3").scrollIntoView({ behavior: 'smooth' });
+      });
+      </script>
+      <script>
+        function validateForm(){
+          var Name=document.forms["messageForm"]["Name"].value;
+          var Email=document.forms["messageForm"]["Email"].value;
+          var Message=document.forms["messageForm"]["Message"].value;
+    
+          if(Name=="" || Email=="" || Message==""){
+            alert("Empty fields found. Please fill the form.");
+          }else{
+            alert("Thank you for the feedback.");
+          }
+          
+        }
+      </script>  
+</body>
+</html>

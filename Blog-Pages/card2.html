@@ -1,0 +1,550 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta name="author" content="Tika Thamsuhang">
+    <meta name="description" content="E-commerce website">
+    <meta name="keywords" content="HTML">
+    <title>Exploring the Role of Technology in Shaping the Modern World</title>
+    <<!-- Custon CSS -->
+        <link rel="stylesheet" href="./CSS/header.css">
+        <link rel="stylesheet" href="./CSS/footer.css">
+        <link rel="stylesheet" href="./CSS/home-page.css">
+
+
+
+        <style>
+            .container {
+                width: 1230px;
+                /* Sets the width of the container */
+                height: auto;
+                /* Allows the height to adjust automatically */
+                margin: auto;
+                /* Centers the container horizontally */
+                margin-top: 80px;
+                /* Adds top margin to the container */
+                display: flex;
+                /* Uses flexbox for layout */
+            }
+
+            .icons {
+                margin: 80px 40px;
+                /* Sets the margins for the icons */
+                position: absolute;
+                /* Positions the icons absolutely */
+            }
+
+            .icons ul {
+                list-style: none;
+                /* Removes the default list styles */
+                text-align: center;
+                /* Centers the text within the list */
+                padding: 8px 0;
+                /* Adds padding to the list */
+            }
+
+            .icons ul li {
+                padding: 6px 0;
+                /* Adds padding to the list items */
+            }
+
+            .content {
+                padding: 0px 105px;
+                /* Adds padding to the content */
+                margin: 0 112px;
+                /* Adds margin to the content */
+            }
+
+            .content h1 {
+                font-size: 39px;
+                /* Sets the font size of the heading */
+                margin-bottom: 15px;
+                /* Adds bottom margin to the heading */
+            }
+
+            .content img {
+                width: 777px;
+                /* Sets the width of the image */
+            }
+
+            ul li i {
+                border: 2px solid;
+                /* Adds a border to the icons */
+                border-radius: 100%;
+                /* Rounds the corners of the icons */
+                padding: 6px 9px;
+                /* Adds padding to the icons */
+                font-size: 15px;
+                /* Sets the font size of the icons */
+            }
+
+            .icons ul li a img {
+                width: 32px;
+                /* Sets the width of the images within links */
+                border: 1px solid;
+                /* Adds a border to the images within links */
+                border-radius: 26%;
+                /* Rounds the corners of the images within links */
+                padding: 5px;
+                /* Adds padding to the images within links */
+            }
+
+            .icons ul li a img:hover {
+                background-color: #a9a9a9;
+                /* Changes the background color of the images within links on hover */
+                border: 1px solid #a9a9a9;
+                /* Changes the border color of the images within links on hover */
+            }
+
+            .icons button {
+                border: white;
+                /* Sets the border color of the buttons */
+                background: white;
+                /* Sets the background color of the buttons */
+                cursor: pointer;
+                /* Changes the cursor to a pointer on hover */
+                margin-top: 18px;
+                /* Adds top margin to the buttons */
+            }
+
+            .icons button img {
+                width: 45px;
+                /* Sets the width of the images within buttons */
+                background: white;
+                /* Sets the background color of the images within buttons */
+                padding: 4px;
+                /* Adds padding to the images within buttons */
+            }
+
+            .icons button img:hover {
+                width: 45px;
+                /* Sets the width of the images within buttons on hover */
+                background: white;
+                /* Sets the background color of the images within buttons on hover */
+                padding: 0px;
+                /* Removes the padding from the images within buttons on hover */
+            }
+
+            .nav a {
+                border: 1px;
+                /* Sets the border style of the navigation links */
+                text-decoration: none;
+                /* Removes the underline from the navigation links */
+                background: rgba(0, 0, 0, 0.05);
+                /* Sets the background color of the navigation links */
+                color: rgba(0, 0, 0, 0.6);
+                /* Sets the text color of the navigation links */
+                border-radius: 3px;
+                /* Rounds the corners of the navigation links */
+                padding: 8px 12px;
+                /* Adds padding to the navigation links */
+                display: inline-block;
+                /* Displays the navigation links as inline-block elements */
+                margin-right: 4px;
+                /* Adds right margin to the navigation links */
+            }
+
+            .para {
+                margin-top: 25px;
+                /* Adds top margin to the paragraph section */
+                display: flex;
+                /* Uses flexbox for layout */
+            }
+
+            .para p::before {
+                /* the '::before' pseudo-element is used to insert the content before the paragraph element, and the '\00AB' value represents the Unicode code point for the "«" symbol. */
+                content: "\00AB";
+                /* Inserts content before the paragraphs */
+            }
+
+            .para-text {
+                border-top: 1px solid #a9a9a9;
+                /* Adds a top border to the text paragraph */
+                width: 50%;
+                /* Sets the width of the text paragraph */
+                height: auto;
+                /* Allows the height to adjust automatically */
+                padding: 15px 0px;
+                /* Adds padding to the text paragraph */
+                border-bottom: 1px solid #a9a9a9;
+                /* Adds a bottom border to the text paragraph */
+                font-size: 20px;
+                /* Sets the font size of the text paragraph */
+            }
+
+            .para-box {
+                border-top: 1px solid #a9a9a9;
+                /* Adds a top border to the box paragraph */
+                width: 50%;
+                /* Sets the width of the box paragraph */
+                height: auto;
+                /* Allows the height to adjust automatically */
+                padding: 15px 0px;
+                /* Adds padding to the box paragraph */
+                border-left: 1px solid #a9a9a9;
+                /* Adds a left border to the box paragraph */
+                border-bottom: 1px solid #a9a9a9;
+                /* Adds a bottom border to the box paragraph */
+            }
+
+            .comments {
+                width: 800px;
+                /* Sets the width of the comments section */
+                margin: auto;
+                /* Centers the comments section horizontally */
+                height: 700px;
+                /* Sets the height of the comments section */
+            }
+
+            .row {
+                display: flex;
+                /* Uses flexbox for layout */
+                justify-content: space-between;
+                /* Aligns items with space between them */
+                margin: 18px 0;
+                /* Adds margin to the rows */
+            }
+
+            .row label input {
+                width: 243px;
+                /* Sets the width of the input fields within labels */
+                height: 38px;
+                /* Sets the height of the input fields within labels */
+                padding: 8px;
+                /* Adds padding to the input fields within labels */
+                border-radius: 2px;
+                /* Rounds the corners of the input fields within labels */
+                background: #f0f8ff;
+                /* Sets the background color of the input fields within labels */
+                border: #f0f8ff;
+                /* Sets the border color of the input fields within labels */
+                font-family: 'Josefin Sans', sans-serif;
+                /* Sets the font family of the input fields within labels */
+            }
+
+            textarea {
+                padding: 15px 12px;
+                /* Adds padding to the textarea */
+                border: #f0f8ff;
+                /* Sets the border color of the textarea */
+                border-radius: 3px;
+                /* Rounds the corners of the textarea */
+                background: #f0f8ff;
+                /* Sets the background color of the textarea */
+            }
+
+            .comments button {
+                margin: 6px 0;
+                /* Adds margin to the buttons within the comments section */
+                padding: 10px;
+                /* Adds padding to the buttons within the comments section */
+                background-color: #1C9963;
+                /* Sets the background color of the buttons within the comments section */
+                border-color: #1C9963;
+                /* Sets the border color of the buttons within the comments section */
+                color: #f0f8ff;
+                /* Sets the text color of the buttons within the comments section */
+                font-size: 16px;
+                /* Sets the font size of the buttons within the comments section */
+                border-radius: 4px;
+                /* Rounds the corners of the buttons within the comments section */
+                font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+                /* Sets the font family of the buttons within the comments section */
+                cursor: pointer;
+                /* Changes the cursor to a pointer on hover */
+            }
+
+            .comments button:hover {
+                background-color: #33cc33;
+                /* Changes the background color of the buttons within the comments section on hover */
+                border-color: #33cc33;
+                /* Changes the border color of the buttons within the comments section on hover */
+            }
+        </style>
+
+</head>
+
+<body>
+    <header id="header" class="header">
+
+        <!-- navigation for the website -->
+        <div class="navigation">
+            <div class="container">
+                <nav class="nav__center">
+                    <div class="nav__header">
+                        <div class="nav__logo">
+                            <a href="./index.html">
+                                <h1>Digital<span>Eye.</span></h1>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="nav__menu">
+                        <ul class="nav__list">
+                            <li class="nav__item">
+                                <a href="./index.html" class="nav__link">Home</a>
+                            </li>
+
+                            <li class="nav__item">
+                                <a href="./product.html" class="nav__link">Product</a>
+                            </li>
+
+                            <li class="nav__item">
+                                <a href="./reserch.html" class="nav__link">Reserch</a>
+                            </li>
+
+                            <li class="nav__item">
+                                <a href="./contact-us.html" class="nav__link">Contact</a>
+                            </li>
+
+                            <li class="nav__item">
+                                <a href="./blog.html" class="nav__link">Blog</a>
+                            </li>
+
+                            <li class="nav__item">
+                                <a href="./about-us.html" class="nav__link">About Us</a>
+                            </li>
+                        </ul>
+
+                        <ul class="nav__icons">
+                            <a href="#" class="icon__item">
+                                <svg>
+                                    <use xlink:href="./Assets/sprite.svg#icon-search"></use>
+                                </svg>
+                            </a>
+
+                            <a href="#" class="icon__item">
+                                <svg>
+                                    <use xlink:href="./Assets/sprite.svg#icon-user"></use>
+                                </svg>
+                            </a>
+
+                            <a href="#" class="icon__item">
+                                <svg>
+                                    <use xlink:href="./Assets/sprite.svg#icon-shopping-basket"></use>
+                                </svg>
+                                <span>2</span>
+                            </a>
+                        </ul>
+                    </div>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <section class="container">
+        <div class="icons">
+            <p>Share</p>
+            <ul>
+                <li><a href="https://www.facebook.com/sharer/sharer.php?u=http://127.0.0.1:5500/card1.html"
+                        target="_blank">
+                        <img src="BlogImages/facebook.png" alt="facebook"></a>
+                </li>
+                <li><a href="https://api.whatsapp.com/send?text=How Technology Affects Daily Life and Business:http://127.0.0.1:5500/card1.html"
+                        target="_blank">
+                        <img src="BlogImages/whatsapp.png" alt="whatsapp"></a>
+                </li>
+                <li><a href="https://twitter.com/intent/tweet?url=http://127.0.0.1:5500/card.html&text=How Technology Affects Daily Life and Business"
+                        target="_blank">
+                        <img src="BlogImages/twitter.png" alt="twitter"></a>
+                </li>
+                <li><a href="https://www.linkedin.com/sharing/share-offsite/?url=http://127.0.0.1:5500/card1.html"
+                        target="_blank">
+                        <img src="BlogImages/linkedin.png" alt="linkedin"></a>
+                </li>
+            </ul>
+            <hr style="margin: 18px 0;">
+            <p>Reply</p>
+            <button><img src="BlogImages/reply.png" alt="reply image" id="scrollButton">
+            </button>
+
+        </div>
+        <div class="content">
+            <h1>Exploring the Role of Technology in Shaping the Modern World</h1>
+            <p style="margin-bottom: 30px;">May 5, 2023</p>
+            <img src="BlogImages/card2Image.webp" alt="card2 image" style="width: 800px;">
+            <p style="padding-top: 30px; line-height: 1.5; font-size: 19px; text-align: justify; margin-bottom: 30px;">
+                "Exploring the Role of Technology in Shaping the Modern World" is a broad and complex topic that
+                involves understanding how various forms of technology have impacted our society, economy, and culture.
+                Technology has transformed the way we live, work, and communicate, and has had a profound impact on
+                virtually every aspect of modern life.
+                <br><br>
+                One of the most significant ways that technology has shaped the modern world is by creating new
+                industries and transforming existing ones. The rise of the internet and digital technology, for example,
+                has led to the emergence of entirely new industries like e-commerce, social media, and digital
+                marketing. At the same time, technology has disrupted traditional industries like retail, publishing,
+                and music.
+                <br><br>
+                Technology has also had a significant impact on how we communicate and interact with each other. The
+                rise of social media platforms and messaging apps has transformed the way we connect and share
+                information, enabling us to communicate and collaborate with people all over the world in real-time.
+                <br><br>
+                Furthermore, technology has had a major impact on healthcare, education, and other public services.
+                Digital technology has enabled remote healthcare services, telemedicine, and online education, making
+                healthcare and education more accessible to people in remote or underserved areas.
+                <br><br>
+                However, technology has also brought its share of challenges and concerns. Cybersecurity threats, data
+                breaches, privacy concerns, and the impact of technology on employment are some of the major challenges
+                that need to be addressed.
+                <br><br>
+                In exploring the role of technology in shaping the modern world, it is essential to understand both the
+                positive and negative impacts of technology, and to consider how we can harness its potential to create
+                a better future for all.
+            </p>
+            <div class="nav">
+                <a href="">Home</a>
+                <a href="">About Us</a>
+                <a href="">Our Products</a>
+            </div>
+            <div class="para">
+                <div class="para-text">
+                    <a href="card3.html">
+                        <p><strong>The Advancements in Technology and Their Effect on Business and Society</strong></p>
+                    </a>
+                </div>
+                <div class="para-box">
+
+                </div>
+            </div>
+        </div>
+
+    </section>
+    <section class="post-cards">
+        <div class="flex-card1">
+
+            <div class="card" id="card4">
+                <a href=""><img src="BlogImages/card4.jpg" alt="card4 image">
+                    <div class="card-detail">
+                        <h2>The Digital Era: How Technology is Transforming the Way We Live and Work</h2>
+                </a>
+                <p>The digital era is fundamentally transforming the way we live and work, with technology enabling us
+                    to connect, collaborate, and create in new and innovative ways, while also presenting us with
+                    unprecedented challenges and opportunities.</p>
+                <hr style="margin-top: 46px;">
+                <p style="padding-top: 13px;">May 7, 2023</p>
+            </div>
+        </div>
+        <div class="card" id="card5">
+            <a href="card5.html"><img src="BlogImages/card5.jpg" alt="card5 image">
+                <div class="card-detail">
+                    <h2>The Pros and Cons of Technology in Daily Life and Business: A Practical Demonstration</h2>
+            </a>
+            <p>As technology continues to transform our daily lives and businesses, it's important to weigh the pros and
+                cons of its use through a practical demonstration that highlights both the benefits and potential
+                drawbacks.</p>
+            <hr style="margin-top: 37px;">
+            <p style="padding-top: 13px;">May 8,2023</p>
+        </div>
+        </div>
+        <div class="card" id="card6">
+            <a href="card6.html"><img src="BlogImages/card6.jpg" alt="card6 image">
+                <div class="card-detail">
+                    <h2>Impact of technology while selling Camera Equipment</h2>
+            </a>
+            <p>The advent of technology has revolutionized the way camera equipment is sold, providing sellers with
+                global reach and buyers with immersive shopping experiences, transforming the industry in profound ways.
+            </p>
+            <hr style="margin-top: 92px;">
+            <p style="padding-top: 13px;">May 9,2023</p>
+        </div>
+        </div>
+        </div>
+    </section>
+
+    <section class="comments" id="section3">
+        <form onsubmit="validateForm()" name="messageForm">
+            <label>Leave a Reply<br><br><textarea name="Message" rows="13" cols="104"
+                    placeholder="Write your response..." style="padding: 15px 12px;"></textarea></label>
+            <br>
+            <div class="row">
+                <label><input type="text" placeholder="Name" name="Name" size="20"></label>
+                <label><input type="text" placeholder="E-mail address" name="Email"></label>
+                <label><input type="text" placeholder="Website link"></label>
+            </div>
+            <button>Post Comment</button>
+        </form>
+    </section>
+    <script>
+        document.getElementById("scrollButton").addEventListener("click", function () {
+            document.getElementById("section3").scrollIntoView({
+                behavior: 'smooth'
+            });
+        });
+    </script>
+    <script>
+        function validateForm() {
+            var Name = document.forms["messageForm"]["Name"].value;
+            var Email = document.forms["messageForm"]["Email"].value;
+            var Message = document.forms["messageForm"]["Message"].value;
+
+            if (Name == "" || Email == "" || Message == "") {
+                alert("Empty fields found. Please fill the form.");
+            } else {
+                alert("Thank you for the feedback.");
+            }
+
+        }
+    </script>
+
+    <!-- Footer of the Page -->
+    <footer id="footer" class="section footer">
+        <div class="container">
+            <div class="footer__top">
+                <div class="footer-top__box">
+                    <h3>Shop Here</h3>
+                    <a href="./product.html">Cameras</a>
+                    <a href="./product.html">Lenses</a>
+                    <a href="./product.html">Accessories</a>
+                    <a href="./product.html">Offers</a>
+                </div>
+                <div class="footer-top__box">
+                    <h3>INFORMATION</h3>
+                    <a href="./about-us.html">About Us</a>
+                    <a href="#">Privacy Policy</a>
+                    <a href="#">Terms & Conditions</a>
+                    <a href="./contact-us.html">Get in Touch</a>
+                </div>
+                <div class="footer-top__box">
+                    <h3>CONTACT US</h3>
+                    <div>
+                        <span>
+                            <svg>
+                                <use xlink:href="./Assets/sprite.svg#icon-location"></use>
+                            </svg>
+                        </span>
+                        Kathmandu, Nepal
+                    </div>
+                    <div>
+                        <span>
+                            <svg>
+                                <use xlink:href="./Assets/sprite.svg#icon-envelop"></use>
+                            </svg>
+                        </span>
+                        <a href="mailto:info@de.birendrao1@gmail.com.com"">info@digitaleye.com</a>
+          </div>
+          <div>
+            <span>
+              <svg>
+                <use xlink:href=" ./Assets/sprite.svg#icon-phone"> </use> </svg> </span> <a
+                            href="tel:+77 9810042188">+977 986960081</a>
+                    </div>
+                    <div>
+                        <span>
+                            <svg>
+                                <use xlink:href="./Assets/sprite.svg#icon-paperplane"></use>
+                            </svg>
+                        </span>
+                        San Fransisco, Califonia
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+    <!-- Importing JavaScript -->
+    <script src="./JS/header.js"></script>
+    <script src="./JS/Home-Page/slider.js"></script>
+</body>
+
+</html>
